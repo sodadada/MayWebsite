@@ -1,0 +1,83 @@
+//Contact
+@import "modules/color";
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content:  space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: $lightBlue;
+  .customContainer {
+    @media screen and (max-width: 576px){
+      padding: 0 46px;
+    }
+  }
+  h3 {
+    @extend %titleFormat;
+    color: $darkBlue;
+    border: solid 4px #ffffff;
+  }
+  p{
+    @extend %font;
+    color: $mediumBlue;
+    margin-bottom: 110px;
+    @media screen and (max-width: 576px){
+      margin: 23px 0 32px;
+    }
+    span{
+      color: $darkBlue
+    }
+  }
+  .mediaIcon {
+    margin-bottom: 20px;
+    img{
+      margin-right: 16px;
+      @media screen and (max-width: 576px){
+        margin-right: 8px;
+        height: 30px;
+        width: auto;
+      }
+    }
+  }
+  input, textarea {
+    border-radius: 0;
+    border: none;
+    color: #9fcfda;
+    background-color: rgba(255, 255, 255, 0.67);
+  }
+  input {
+    height: 40px;
+    @media screen and (max-width: 576px) {
+      height: 27px;
+    }
+  }
+
+  .form-group, #inputName {
+    @media screen and (max-width: 576px) {
+      margin-bottom: 9px;
+    }
+  }
+  #inputMessage {
+    height: 225px;
+    @media screen and (max-width: 576px) {
+      height: 83px;
+    }
+  }
+
+  button {
+    border-radius: 0;
+    color: #fff;
+    background-color: $mediumBlue;
+  }
+}
+
+.subjuct {
+	width: 95px;
+	height: 28px;
+	font-family: PingFangTC;
+	font-size: 20px;
+	letter-spacing: 0.8px;
+	color: #9fcfda;
+}

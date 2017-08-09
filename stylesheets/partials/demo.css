@@ -1,0 +1,58 @@
+/* line 4, ../../sass/partials/demo.scss */
+body {
+  height: 100vh;
+  background-color: #f6c3c9;
+}
+
+/* line 8, ../../sass/partials/demo.scss */
+.demo {
+  position: relative;
+  padding: calc((100vh - 460px - 60px - (80px * 2)) / 2) calc((100vw - 1200px) / 2);
+  margin: 80px 0;
+  background-image: url("../image/demoBg.svg");
+  background-size: cover;
+}
+/* line 17, ../../sass/partials/demo.scss */
+.demo .frame .frameContent {
+  display: flex;
+  max-width: 1200px;
+}
+/* line 20, ../../sass/partials/demo.scss */
+.demo .frame .frameContent iframe {
+  margin-left: 50px;
+  margin-right: 130px;
+}
+/* line 24, ../../sass/partials/demo.scss */
+.demo .frame .frameContent div {
+  width: 664px;
+}
+
+/* line 31, ../../sass/partials/demo.scss */
+.custom-controls-container {
+  display: none;
+}
+
+/* line 34, ../../sass/partials/demo.scss */
+.custom-navigation {
+  margin-top: 80px;
+}
+/* line 36, ../../sass/partials/demo.scss */
+.custom-navigation .flex-next {
+  float: right;
+}
+/* line 38, ../../sass/partials/demo.scss */
+.custom-navigation .flex-next img {
+  transform: rotateZ(180deg);
+}
+/* line 42, ../../sass/partials/demo.scss */
+.custom-navigation img {
+  margin: 0 20px;
+}
+/* line 45, ../../sass/partials/demo.scss */
+.custom-navigation a {
+  font-family: LucidaGrande;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  color: #f6c3c9;
+}

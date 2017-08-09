@@ -1,0 +1,76 @@
+//Banner
+@import "modules/color";
+
+
+.banner {
+  position: relative;
+  background-color: $lightBlue;
+  height: 100vh;
+  text-align: center;
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h3 {
+      font-family: Bungee;
+    	font-size: 40px;
+    	letter-spacing: 2.1px;
+    	color: #1e8ba6;
+      @media screen and (max-width: 576px) {
+        text-align: left;
+        font-size: 34px;
+      	line-height: 1.12;
+      	letter-spacing: 1.4px;
+      }
+    }
+  }
+
+
+  .arrowDown {
+    position: absolute;
+    height: 60px;
+    width:60px;
+    margin:auto;
+    top: 87%;
+    left:0;
+    right:0;
+    &:hover{
+      content: url('../image/arrowDownHover.png');
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+
+
+  .hex {
+    position: absolute;
+  }
+  img.topRight{
+    max-width: 12.98vw;
+    top: 50px;
+    right: 0px;
+    @media screen and (max-width: 576px) {
+      max-width: 80px;
+    }
+  }
+  img.bottomLeft{
+    max-width: 18.36vw;
+    bottom: -46px;
+    left: 0;
+    @media screen and (max-width: 576px) {
+      max-width: 109px;
+      bottom: -19px;
+    }
+  }
+  img.bottomRight{
+    max-width: 36.24vw;
+    bottom: -45px;
+    right: 0;
+    @media screen and (max-width: 576px) {
+      max-width: 226px;
+      bottom: -20px;
+    }
+  }
+}

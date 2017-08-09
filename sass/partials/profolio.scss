@@ -1,0 +1,57 @@
+//profolio
+@import "modules/color";
+
+
+.profolio {
+  display: flex;
+  flex-direction: column;
+  justify-content:  space-between;
+  align-items: center;
+  height: 100vh;
+  h3 {
+    @extend %titleFormat;
+    color: #fff;
+    background-color: $lightPink;
+  }
+  .profolioContent {
+    background-color: #fff;
+    padding-top: 35px;
+    height: 546px;
+    div{
+      .pageIcon {
+        position: absolute;
+        top: 200px;
+        width: 60px;
+        height: 60px;
+        @media screen and (max-width: 576px){
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .prevPage {
+        left: -270px;
+        transform:rotateZ(180deg);
+        @media screen and (max-width: 1000px){
+          left: -60px;
+        }
+      }
+      .nextPage {
+        right: -270px;
+        @media screen and (max-width: 1000px){
+          right: -60px;
+        }
+      }
+    }
+  }
+}
+
+
+.flex-caption {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+  @extend %font2;
+  color: $darkPing;
+}

@@ -1,0 +1,92 @@
+/* line 5, ../../sass/partials/banner.scss */
+.banner {
+  position: relative;
+  background-color: #e6f6fb;
+  height: 100vh;
+  text-align: center;
+}
+/* line 10, ../../sass/partials/banner.scss */
+.banner div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* line 15, ../../sass/partials/banner.scss */
+.banner div h3 {
+  font-family: Bungee;
+  font-size: 40px;
+  letter-spacing: 2.1px;
+  color: #1e8ba6;
+}
+@media screen and (max-width: 576px) {
+  /* line 15, ../../sass/partials/banner.scss */
+  .banner div h3 {
+    text-align: left;
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: 1.4px;
+  }
+}
+/* line 30, ../../sass/partials/banner.scss */
+.banner .arrowDown {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  top: 87%;
+  left: 0;
+  right: 0;
+}
+/* line 38, ../../sass/partials/banner.scss */
+.banner .arrowDown:hover {
+  content: url("../image/arrowDownHover.png");
+}
+@media screen and (max-width: 576px) {
+  /* line 30, ../../sass/partials/banner.scss */
+  .banner .arrowDown {
+    display: none;
+  }
+}
+/* line 47, ../../sass/partials/banner.scss */
+.banner .hex {
+  position: absolute;
+}
+/* line 50, ../../sass/partials/banner.scss */
+.banner img.topRight {
+  max-width: 12.98vw;
+  top: 50px;
+  right: 0px;
+}
+@media screen and (max-width: 576px) {
+  /* line 50, ../../sass/partials/banner.scss */
+  .banner img.topRight {
+    max-width: 80px;
+  }
+}
+/* line 58, ../../sass/partials/banner.scss */
+.banner img.bottomLeft {
+  max-width: 18.36vw;
+  bottom: -46px;
+  left: 0;
+}
+@media screen and (max-width: 576px) {
+  /* line 58, ../../sass/partials/banner.scss */
+  .banner img.bottomLeft {
+    max-width: 109px;
+    bottom: -19px;
+  }
+}
+/* line 67, ../../sass/partials/banner.scss */
+.banner img.bottomRight {
+  max-width: 36.24vw;
+  bottom: -45px;
+  right: 0;
+}
+@media screen and (max-width: 576px) {
+  /* line 67, ../../sass/partials/banner.scss */
+  .banner img.bottomRight {
+    max-width: 226px;
+    bottom: -20px;
+  }
+}

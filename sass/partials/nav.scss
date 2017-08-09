@@ -1,0 +1,72 @@
+//banner
+@import "modules/color";
+
+
+nav.customNav{
+  // display: none;
+  font-family: AmericanTypewriter;
+  background-color: #fff;
+  transition: top 0.2s ease-in-out;
+  @media screen and (min-width: 992px){
+    padding: 0 60px;
+    height: 60px;
+  }
+  @media screen and (max-width: 576px){
+    padding: 5px 24px;
+  }
+
+  // leftside logo and brand
+  .customNavBrand {
+    display: flex;
+    align-items: center;
+    .cumtomLogo img{
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      margin-right: 10px;
+      @media screen and (max-width: 768px){
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+      	letter-spacing: 1px;
+      }
+    }
+    .customBrand {
+      font-size: 29px;
+    	letter-spacing: 0.8px;
+    	color: $darkBlue;
+      @media screen and (max-width: 576px){
+        font-size: 18px;
+      	letter-spacing: 1px;
+      }
+    }
+  }
+
+  // toggler icon
+  .custom-toggler {
+    line-height: 33px;
+    padding: 0;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1e8ba6' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+
+  // right side list
+  ul a {
+    margin-left: 40px;
+    font-size: 20px;
+  	letter-spacing: 0.8px;
+  	color: $mediumBlue;
+    @media screen and (max-width: 576px){
+      text-align: center;
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 0.6px;
+      padding: 4px 0;
+    }
+  }
+}
+
+.nav-up {
+  top: -60px ; // same as header height. use variables in LESS/SASS
+}

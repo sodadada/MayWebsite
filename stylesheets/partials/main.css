@@ -1,0 +1,33 @@
+/* line 2, ../../sass/partials/main.scss */
+* {
+  box-shadow: 0 0 0 1px red;
+}
+
+/* line 6, ../../sass/partials/main.scss */
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 9, ../../sass/partials/main.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 63, ../../sass/partials/main.scss */
+.balance {
+  height: 116px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 70, ../../sass/partials/main.scss */
+  .largeScreenNone {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 77, ../../sass/partials/main.scss */
+  .hpNone {
+    display: none !important;
+  }
+}

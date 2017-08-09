@@ -1,0 +1,57 @@
+//Demo
+@import "modules/color";
+
+body {
+  height: 100vh;
+  background-color: $lightPink;
+}
+.demo {
+  // .demoFrame {
+    position: relative;
+    padding: calc((100vh - 460px - 60px - (80px * 2)) / 2)
+              calc((100vw - 1200px) / 2);
+    margin: 80px 0;
+    background-image: url('../image/demoBg.svg');
+    background-size: cover;
+    .frame {
+      .frameContent{
+        display: flex;
+        max-width: 1200px;
+        iframe {
+          margin-left: 50px;
+          margin-right: 130px;
+        }
+        div{
+          width: 664px;
+        }
+      }
+    }
+  // }
+}
+ .custom-controls-container{
+   display: none;
+ }
+ .custom-navigation {
+   margin-top: 80px;
+   .flex-next {
+     float: right;
+     img{
+       transform: rotateZ(180deg);
+     }
+   }
+   img {
+     margin: 0 20px;
+   }
+   a {
+    font-family: LucidaGrande;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: $lightPink;
+
+   }
+ }
+// .demoFrame{
+//   margin: calc((100vh - 60px - (80px * 2) - 364px) / 2)
+//             calc((100vw - 1200px) / 2);
+// }

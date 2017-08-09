@@ -1,0 +1,83 @@
+//About
+@import "modules/color";
+
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-height: 768px){
+    height: 100vh;
+  }
+
+  height: 100vh;
+
+  @media screen and (max-width: 576px){
+    display: block;
+    padding-bottom: 65px;
+  }
+  // 讓title和pink area能一起在
+  div {
+    position: relative;
+    height: 768px;
+    padding-top: 33px;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 33px;
+      @extend %title;
+      color: lightPink;
+      @media screen and (max-width: 576px){
+        margin-bottom: 20px;
+        font-size: 28px;
+      	letter-spacing: 0.7px;
+      }
+    }
+    //pink area
+    div{
+      display: flex;
+
+      max-width: 1150px;
+      // original is 535px
+      height: 536px;
+      // height: 460px;
+      align-items: center;
+      background-color: $lightPink;
+      @media screen and (max-width: 576px){
+        flex-direction: column;
+        padding: 50px 16vw;
+        height: 80vh;
+      }
+      p {
+        margin-left: 107px;
+        @extend %font;
+        color: #fff;
+        text-align: left;
+        @media screen and (max-width: 576px){
+          order: 2;
+          margin: 0;
+        }
+      }
+      img {
+        margin: 0 20px;
+        @media screen and (max-width: 576px){
+          order: 1;
+          margin: 0 0 20px 0;
+          width: 180px;
+          height: auto;
+        }
+      }
+    }
+    .pingHex {
+      position: absolute;
+      left: -110px;
+      bottom: 34px;
+      @media screen and (max-width: 576px){
+        width: auto;
+        height: 130px;
+        left: -16px;
+        bottom: 147px;;
+      }
+    }
+  }
+}
