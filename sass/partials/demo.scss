@@ -1,57 +1,175 @@
 //Demo
 @import "modules/color";
 
-body {
-  height: 100vh;
-  background-color: $lightPink;
-}
+// .pinkBg {
+//   background-color: $lightPink;
+//   height: calc(100vh - 60px);
+//   padding: 80px 0;
+//   @media screen and (max-height: 768px) {
+//     padding: calc((100vh - 550px - 60px) / 2);
+//   }
+// }
 .demo {
-  // .demoFrame {
+  // @media screen and (min-height: 830px) {
+  //   height: calc(100vh - 60px - (80px * 2));
+  // }
+  // min-height: 550px;
+  // padding-top: calc((100vh - 460px - 60px - (80px * 2)) / 2);
+
+  // position: fixed;
+  min-height: calc(100vh - 60px);
+  background-image: url('../image/demoBg.svg');
+  background-size: cover;
+  box-shadow: 0 -100px 0 0 #fff inset;
+  border-top: $lightPink solid 80px;
+  border-bottom: $lightPink solid 80px;
+  z-index: 100;
+  width: 100%;
+  @media screen and (max-height: 768px) {
+    border-top: $lightPink solid calc((100vh - 550px - 60px) / 2);
+    border-bottom: $lightPink solid calc((100vh - 550px - 60px) / 2);
+  }
+  @media screen and (max-width: 768px) {
+    border: none;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 40px;
+  }
+  .demoFrame {
     position: relative;
-    padding: calc((100vh - 460px - 60px - (80px * 2)) / 2)
-              calc((100vw - 1200px) / 2);
-    margin: 80px 0;
-    background-image: url('../image/demoBg.svg');
-    background-size: cover;
-    .frame {
-      .frameContent{
-        display: flex;
-        max-width: 1200px;
-        iframe {
-          margin-left: 50px;
-          margin-right: 130px;
-        }
-        div{
-          width: 664px;
+  }
+  .frame {
+    max-width: 1200px;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 576px) {
+      padding-top: 50px;
+    }
+    iframe {
+      width: 195px;
+      height: 340px;
+      float: left;
+      margin-left: 80px;
+      margin-right: 40px;
+      @media screen and (max-width: 576px) {
+        float: none;
+        display: block;
+        width: 210px;
+        height: 360px;
+        margin: 0 auto;
+      }
+    }
+    div {
+      float: right;
+      width: 664px;
+      margin-right: 130px;
+      @media screen and (max-width: 576px) {
+        float: none;
+        width: auto;
+        margin: 0;
+      }
+    }
+    .frameTitle h3 {
+      @extend %demoTitle;
+    }
+    .frameTitle p {
+      @extend %greenSubtitle;
+    }
+    .frameP p {
+      margin-top: 16px;
+      @extend %demoFont;
+    }
+  }
+  .custom-navigation {
+    max-width: 1200px;
+    padding: 0 60px 15px;
+    margin: 75px auto 0;
+    @media screen and (max-width: 576px) {
+      // position: absolute;
+      top: 10px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      margin-left: -40px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .flex-prev img {
+      margin-top: -5px;
+      margin-right: 20px;
+      @media screen and (max-width: 576px) {
+        margin-left: 15px;
+        margin-right: 5px;
+      }
+    }
+    .flex-next {
+      float: right;
+      img{
+        transform: rotateZ(180deg);
+        margin-top: -5px;
+        margin-left: 20px;
+        @media screen and (max-width: 576px) {
+          margin-left: 5px;
+          margin-right: 15px;
         }
       }
     }
-  // }
+    a {
+      font-family: LucidaGrande;
+      font-size: 26px;
+      letter-spacing: 0.7px;
+      color: $lightPink;
+      :focus {
+        text-decoration: none;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 18px;
+      	letter-spacing: 0.5px;
+      }
+    }
+  }
 }
- .custom-controls-container{
-   display: none;
- }
- .custom-navigation {
-   margin-top: 80px;
-   .flex-next {
-     float: right;
-     img{
-       transform: rotateZ(180deg);
-     }
-   }
-   img {
-     margin: 0 20px;
-   }
-   a {
-    font-family: LucidaGrande;
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 0.7px;
-    color: $lightPink;
 
-   }
- }
-// .demoFrame{
-//   margin: calc((100vh - 60px - (80px * 2) - 364px) / 2)
-//             calc((100vw - 1200px) / 2);
-// }
+
+
+
+.profolio .flexslider {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  @media screen and (max-width: 576px) {
+    width: 220px;
+  }
+}
+.demo .flexslider {
+  margin: 0;
+  background: none;
+  .custom-controls-container{
+    display: none;
+  }
+}
+
+.flex-control-paging li a {
+  width: 20px;
+	height: 20px;
+  background-color: #f1c8d0;
+  box-shadow: none;
+  &:hover {
+    background: #DC2263;
+  }
+  &.flex-active {
+    background-color: rgba(220, 34, 99, 0.99);
+  }
+  @media screen and (max-width: 800px){
+    width: 14px;
+  	height: 14px;
+  }
+}
+.flex-control-nav {
+  @media screen and (max-width: 576px){
+    bottom: -30px;
+  }
+}

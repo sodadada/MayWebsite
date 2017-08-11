@@ -3,21 +3,21 @@
 
 
 .profolio {
-  display: flex;
-  flex-direction: column;
-  justify-content:  space-between;
-  align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   h3 {
     @extend %titleFormat;
     color: #fff;
     background-color: $lightPink;
+    @media screen and (max-width: 768px){
+      border: 2px solid #fff;
+    }
   }
   .profolioContent {
     background-color: #fff;
-    padding-top: 35px;
-    height: 546px;
+    padding-top: calc((100vh - 115px - 550px) / 2);
     div{
+      margin-left: auto;
+      margin-right: auto;
       .pageIcon {
         position: absolute;
         top: 200px;
@@ -29,29 +29,39 @@
         }
       }
       .prevPage {
-        left: -270px;
+        left: -20vw;
         transform:rotateZ(180deg);
         @media screen and (max-width: 1000px){
+          left: -120px;
+        }
+        @media screen and (max-width: 576px){
           left: -60px;
+        }
+        @media screen and (max-width: 370px){
+          left: -45px;
         }
       }
       .nextPage {
-        right: -270px;
+        right: -20vw;
         @media screen and (max-width: 1000px){
+          right: -120px;
+        }
+        @media screen and (max-width: 576px){
           right: -60px;
         }
+        @media screen and (max-width: 370px){
+          right: -45px;
+        }
+      }
+      .flex-caption {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        margin-top: 10px;
+        text-align: center;
+        @extend %font2;
+        color: $darkPing;
       }
     }
   }
-}
-
-
-.flex-caption {
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  margin-top: 10px;
-  text-align: center;
-  @extend %font2;
-  color: $darkPing;
 }

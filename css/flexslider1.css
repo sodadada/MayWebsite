@@ -43,14 +43,27 @@
 .flexslider {
   margin: 0;
   padding: 0;
+  width: 500px;
+}
+@media screen and (max-width: 576px) {
+  .flexslider {
+    width: 220px;
+  }
 }
 .flexslider .slides > li {
+  width: 490px;
   display: none;
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  width: 490px;
+  height: auto;
   display: block;
+}
+@media screen and (max-width: 576px) {
+  .flexslider .slides img {
+    width: 220px;
+  }
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -73,7 +86,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 60px;
+  margin: 0 0 5px;
   background: #fff;
   border: 4px solid #fff;
   position: relative;
@@ -195,9 +208,13 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-nav {
   width: 100%;
-  position: absolute;
-  bottom: -40px;
+  /*position: absolute; ??*/
+  position: relative;
+  bottom: -12px;
   text-align: center;
+}
+.flex-control-nav {
+  bottom: 0px;
 }
 .flex-control-nav li {
   margin: 0 6px;
@@ -206,28 +223,28 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 20px;
+	height: 20px;
   display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: #f1c8d0;
   cursor: pointer;
   text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  /*-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);*/
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+
 .flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
+  /*background: #333;*/
+  /*background: rgba(0, 0, 0, 0.7);*/
+  background: #DC2263;
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background-color: rgba(220, 34, 99, 0.99);
   cursor: default;
 }
 .flex-control-thumbs {

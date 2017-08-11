@@ -39,3 +39,29 @@
 
 
 - margin 失效？
+
+```
+box-shadow: 0px 80px 0px 0px $lightPink inset,
+            0px -80px 0px 0px $lightPink inset;
+```
+
+### min-height
+- 預防當寬度縮小時，內容往下擠就超出height了
+- 例子：版面設計為一面式100vh, screen高度縮小時常常內容會凸出邊界造成跑版
+- 所以當內容及各邊界更重要不可以犧牲時，就叫犧牲100vh，改為min-height100vh就好了
+```
+height: 100vh;
+min-height: 708px;;
+@media screen and (max-width: 576px){
+  height: 100vh;
+  min-height: auto;
+}
+```
+
+
+### iframe 水平置中
+- ```display: block; margin: 0 auto;```就可以了
+
+
+### flexbox 圖片變形
+- align-self

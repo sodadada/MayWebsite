@@ -1,58 +1,36 @@
-/* line 4, ../../sass/partials/demo.scss */
-body {
-  height: 100vh;
-  background-color: #f6c3c9;
-}
+/*
+Sass::SyntaxError: ".demo .frame .frameTitle h3" failed to @extend "%demoTitle".
+The selector "%demoTitle" was not found.
+Use "@extend %demoTitle !optional" if the extend should be able to fail.
 
-/* line 8, ../../sass/partials/demo.scss */
-.demo {
-  position: relative;
-  padding: calc((100vh - 460px - 60px - (80px * 2)) / 2) calc((100vw - 1200px) / 2);
-  margin: 80px 0;
-  background-image: url("../image/demoBg.svg");
-  background-size: cover;
-}
-/* line 17, ../../sass/partials/demo.scss */
-.demo .frame .frameContent {
-  display: flex;
-  max-width: 1200px;
-}
-/* line 20, ../../sass/partials/demo.scss */
-.demo .frame .frameContent iframe {
-  margin-left: 50px;
-  margin-right: 130px;
-}
-/* line 24, ../../sass/partials/demo.scss */
-.demo .frame .frameContent div {
-  width: 664px;
-}
 
-/* line 31, ../../sass/partials/demo.scss */
-.custom-controls-container {
-  display: none;
-}
-
-/* line 34, ../../sass/partials/demo.scss */
-.custom-navigation {
-  margin-top: 80px;
-}
-/* line 36, ../../sass/partials/demo.scss */
-.custom-navigation .flex-next {
-  float: right;
-}
-/* line 38, ../../sass/partials/demo.scss */
-.custom-navigation .flex-next img {
-  transform: rotateZ(180deg);
-}
-/* line 42, ../../sass/partials/demo.scss */
-.custom-navigation img {
-  margin: 0 20px;
-}
-/* line 45, ../../sass/partials/demo.scss */
-.custom-navigation a {
-  font-family: LucidaGrande;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 0.7px;
-  color: #f6c3c9;
-}
+Backtrace:
+/Users/tenglee/Desktop/repository/MayWebsite/sass/partials/demo.scss:74
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `block in each_value'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `each'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `each_value'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:39:in `css_tree'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".demo .frame .frameTitle h3\" failed to @extend \"%demoTitle\".\A The selector \"%demoTitle\" was not found.\A Use \"@extend %demoTitle !optional\" if the extend should be able to fail.\A "; }

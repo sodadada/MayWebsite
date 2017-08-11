@@ -4,6 +4,7 @@
 
 nav.customNav{
   // display: none;
+
   font-family: AmericanTypewriter;
   background-color: #fff;
   transition: top 0.2s ease-in-out;
@@ -11,7 +12,7 @@ nav.customNav{
     padding: 0 60px;
     height: 60px;
   }
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 768px){
     padding: 5px 24px;
   }
 
@@ -35,7 +36,7 @@ nav.customNav{
       font-size: 29px;
     	letter-spacing: 0.8px;
     	color: $darkBlue;
-      @media screen and (max-width: 576px){
+      @media screen and (max-width: 768px){
         font-size: 18px;
       	letter-spacing: 1px;
       }
@@ -57,7 +58,7 @@ nav.customNav{
     font-size: 20px;
   	letter-spacing: 0.8px;
   	color: $mediumBlue;
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 768px){
       text-align: center;
       margin: 0;
       font-size: 18px;
