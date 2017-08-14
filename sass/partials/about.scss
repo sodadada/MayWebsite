@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 33px 0;
   @media screen and (max-width: 768px){
     display: block;
     background-color: $lightPink;
@@ -16,20 +15,24 @@
   }
   h3 {
     padding-bottom: 33px;
-    margin: 0;
+    margin: 33px 0 0 0;
     @extend %title;
     color: lightPink;
     @media screen and (max-width: 768px){
       padding: 20px;
+      margin: 0;
       background-color: #fff;
     }
   }
   .pinkArea {
     display: flex;
     max-width: 1120px;
+    padding-bottom: 33px;
+    margin-bottom: 120px;
     background-color: $lightPink;
     @media screen and (max-width: 768px){
       flex-direction: column;
+      margin-bottom: 0;
     }
     img {
       align-self: flex-start;
@@ -40,7 +43,7 @@
       }
     }
     div {
-      margin: 80px 110px 60px 115px;
+      margin: 80px 80px 60px 60px;
       @media screen and (max-width: 768px){
         margin: 0 47px 0 33px;
       }
@@ -48,24 +51,30 @@
         font-family: Bungee;
       	font-size: 48px;
       	letter-spacing: 1.3px;
+        line-height: 1;
       	color: #c13368;
+        margin-bottom: 0;
         @media screen and (max-width: 768px){
           margin: 0;
           font-size: 30px;
 	        letter-spacing: 0.8px;
         }
       }
-      :nth-child(2) {
+      :nth-child(3) {
+        display: inline-block;
         font-family: Bungee;
         font-size: 24px;
+        line-height: 28px;
         letter-spacing: 1px;
         color: $mediumBlue;
+        margin: 0px;
         @media screen and (max-width: 768px){
           font-size: 18px;
           letter-spacing: 0.7px;
         }
       }
       :last-child {
+        margin-top: 28px;
         @extend %font;
         color: #fff;
         @media screen and (max-width: 768px){

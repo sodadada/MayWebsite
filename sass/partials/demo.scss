@@ -1,30 +1,20 @@
 //Demo
 @import "modules/color";
 
-// .pinkBg {
-//   background-color: $lightPink;
-//   height: calc(100vh - 60px);
-//   padding: 80px 0;
-//   @media screen and (max-height: 768px) {
-//     padding: calc((100vh - 550px - 60px) / 2);
-//   }
-// }
-.demo {
-  // @media screen and (min-height: 830px) {
-  //   height: calc(100vh - 60px - (80px * 2));
-  // }
-  // min-height: 550px;
-  // padding-top: calc((100vh - 460px - 60px - (80px * 2)) / 2);
 
-  // position: fixed;
-  min-height: calc(100vh - 60px);
-  background-image: url('../image/demoBg.svg');
+.demo {
+  position: fixed;
+  top: -2000px;
+  left: 0;
+  min-height: calc(100vh - 40px);
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  // background-image: url('../image/demoBgMod.png');
   background-size: cover;
   box-shadow: 0 -100px 0 0 #fff inset;
   border-top: $lightPink solid 80px;
   border-bottom: $lightPink solid 80px;
-  z-index: 100;
-  width: 100%;
   @media screen and (max-height: 768px) {
     border-top: $lightPink solid calc((100vh - 550px - 60px) / 2);
     border-bottom: $lightPink solid calc((100vh - 550px - 60px) / 2);
@@ -32,18 +22,21 @@
   @media screen and (max-width: 768px) {
     border: none;
   }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     padding: 0 40px;
   }
   .demoFrame {
     position: relative;
+    .demoFlexslider {
+      margin-bottom: 75px;
+    }
   }
   .frame {
     max-width: 1200px;
     padding-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       padding-top: 50px;
     }
     iframe {
@@ -52,7 +45,7 @@
       float: left;
       margin-left: 80px;
       margin-right: 40px;
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         float: none;
         display: block;
         width: 210px;
@@ -62,36 +55,44 @@
     }
     div {
       float: right;
-      width: 664px;
+      width: calc(100% - (130px * 2) - 200px - 40px);
       margin-right: 130px;
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         float: none;
         width: auto;
-        margin: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
       }
     }
     .frameTitle h3 {
       @extend %demoTitle;
+      font-size: 24px;
+    }
+    .demoDot {
+      display: inline;
+      color: #9fcfda;
+      font-size: 25px;
+      line-height: 0;
+      margin: 0;
     }
     .frameTitle p {
       @extend %greenSubtitle;
     }
     .frameP p {
-      margin-top: 16px;
+      margin-top: 24px;
       @extend %demoFont;
     }
   }
   .custom-navigation {
     max-width: 1200px;
     padding: 0 60px 15px;
-    margin: 75px auto 0;
-    @media screen and (max-width: 576px) {
-      // position: absolute;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      position: absolute;
       top: 10px;
       width: 100%;
       padding: 0;
       margin: 0;
-      margin-left: -40px;
       img {
         width: 20px;
         height: 20px;
@@ -100,8 +101,8 @@
     .flex-prev img {
       margin-top: -5px;
       margin-right: 20px;
-      @media screen and (max-width: 576px) {
-        margin-left: 15px;
+      @media screen and (max-width: 768px) {
+        margin-left: -20px;
         margin-right: 5px;
       }
     }
@@ -111,9 +112,9 @@
         transform: rotateZ(180deg);
         margin-top: -5px;
         margin-left: 20px;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
           margin-left: 5px;
-          margin-right: 15px;
+          margin-right: -20px;
         }
       }
     }
@@ -125,7 +126,7 @@
       :focus {
         text-decoration: none;
       }
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         font-size: 18px;
       	letter-spacing: 0.5px;
       }
@@ -134,42 +135,11 @@
 }
 
 
-
-
-.profolio .flexslider {
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  @media screen and (max-width: 576px) {
-    width: 220px;
-  }
-}
 .demo .flexslider {
   margin: 0;
+  border: none;
   background: none;
-  .custom-controls-container{
-    display: none;
-  }
 }
-
-.flex-control-paging li a {
-  width: 20px;
-	height: 20px;
-  background-color: #f1c8d0;
-  box-shadow: none;
-  &:hover {
-    background: #DC2263;
-  }
-  &.flex-active {
-    background-color: rgba(220, 34, 99, 0.99);
-  }
-  @media screen and (max-width: 800px){
-    width: 14px;
-  	height: 14px;
-  }
-}
-.flex-control-nav {
-  @media screen and (max-width: 576px){
-    bottom: -30px;
-  }
+.demo .custom-controls-container ol{
+  display: none;
 }

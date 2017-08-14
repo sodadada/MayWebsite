@@ -1,125 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>May Huang</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="stylesheets/print.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!-- Navigation Bar is here -->
-    <header>
-      <nav class="navbar navbar-default navbar-toggleable-sm fixed-top customNav nav-down">
-        <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand customNavBrand" href="#">
-            <span class="cumtomLogo"><img src="image/logo.svg" alt="logo"></span>
-            <span class="customBrand">May Huang</span>
-        </a>
+<head>
+  <title>May Huang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+  <!-- css animation -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+  <!-- FlexSlider2 -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="stylesheets/print.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar is here -->
+  <header>
+    <nav class="navbar navbar-default navbar-toggleable-sm fixed-top customNav nav-down">
+      <button id="nav-btn" class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand customNavBrand scrollToHome" href="#banner">
+        <span class="cumtomLogo"><img src="image/logo.svg" alt="logo"></span>
+        <span class="customBrand">May Huang</span>
+      </a>
 
 
-        <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#profolio">Profolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <div class="collapse navbar-collapse navbar-right" id="navbarDiv">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item myScrollTop active">
+            <a class="nav-link escHome" href="#banner" data-toggle="collapse" data-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item myScrollTop">
+            <a class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
+          </li>
+          <li class="nav-item myScrollTop">
+            <a class="nav-link" href="#profolio" data-toggle="collapse" data-target=".navbar-collapse.show">Profolio</a>
+          </li>
+          <li class="nav-item myScrollTop">
+            <a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="transparentClosePage"></div> -->
+  </header>
 
 
+  <!-- banner is here -->
+  <div id="banner" class="banner">
+    <div>
+      <h3>HELLO! <br class="largeScreenNone">I AM <br class="largeScreenNone">MAY.<br>
+        A UI <br class="largeScreenNone">Designer <br class="largeScreenNone">BASED IN <br class="largeScreenNone">TAIWAN.
+      </h3>
+    </div>
 
-    <!-- banner is here -->
-    <div id="banner" class="banner">
+    <img class="arrowDown animated infinite bounce scrollToAbout" src="image/arrowDown.png" alt="">
+    <img class="hex topRight" src="image/topRight.svg" alt="">
+    <img class="hex bottomLeft" src="image/bottomLeft.svg" alt="">
+    <img class="hex bottomRight" src="image/bottomRight.svg" alt="">
+  </div>
+
+
+  <!-- about is here -->
+  <div id="about" class="about ">
+    <h3>ABOUT</h3>
+    <div class="pinkArea">
+      <img src="image/about.png" alt="personalPhoto">
       <div>
-        <h3>HELLO! <br class="largeScreenNone">I AM <br class="largeScreenNone">MAY.<br>
-          A UI <br class="largeScreenNone">Designer <br class="largeScreenNone">BASED IN <br class="largeScreenNone">TAIWAN.
-        </h3>
-      </div>
-
-      <img class="arrowDown" src="image/arrowDown.png" alt="">
-      <img class="hex topRight" src="image/topRight.svg" alt="">
-      <img class="hex bottomLeft" src="image/bottomLeft.svg" alt="">
-      <img class="hex bottomRight" src="image/bottomRight.svg" alt="">
-    </div>
-
-
-    <!-- about is here -->
-    <div id="about" class="about">
-      <h3>ABOUT</h3>
-      <div class="pinkArea">
-        <img src="image/about.png" alt="personalPhoto">
-        <div>
-          <h4>MAY<br>HUANG </h4>
-          <p class="subTitle">UI DESIGNER</p>
-          <p>Hi there, I’m a visual user interface (UI) designer driven by passion and conviction. I firmly believe that ‘’There is no perfect design, but design is about solving problems.’’
-            Try to make technology simpler and delightful to use.
-          </p>
-        </div>
+        <h4>MAY<br>HUANG </h4>
+        <i class="dot">●</i><p class="subTitle">UI DESIGNER</p>
+        <p>Hi there, I’m a visual user interface (UI) designer driven by passion and conviction. I firmly believe that ‘’There is no perfect design, but design is about solving problems.’’
+          Try to make technology simpler and delightful to use.
+        </p>
       </div>
     </div>
+  </div>
 
 
-    <!-- profolio is here -->
-    <div id="profolio" class="profolio">
-      <h3>PROFOLIO</h3>
-      <div class="profolioContent">
-        <div class="flexslider custom-navigation">
-          <a href="#" class="flex-prev"><img class="pageIcon prevPage" src="image/next-page.png" alt=""></a>
-          <a href="#" class="flex-next"><img class="pageIcon nextPage" src="image/next-page.png" alt=""></a>
-          <ul class="slides">
-            <li>
-              <img class="hpNone"  src="image/profolio1@3x.png" alt="profolio">
-              <img  class="largeScreenNone" src="image/hpProfolio1@3x.png" alt="profolio">
-              <p class="flex-caption">UI Design<br>
-                Flight booking app for iOS</p>
-            </li>
-            <li>
-              <img class="hpNone"  src="image/profolio2@3x.png" alt="profolio">
-              <img  class="largeScreenNone" src="image/hpProfolio2@3x.png" alt="profolio">
-              <p class="flex-caption">UI Design<br>
-                Movie ticket booking app for iOS</p>
-            </li>
-            <li>
-              <img class="hpNone" src="image/profolio3@3x.png" alt="profolio">
-              <img class="largeScreenNone" src="image/hpProfolio3@3x.png" alt="profolio">
-              <p class="flex-caption">UI Resign<br>
-                Mcdelivery app for Android</p>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="triggle">click me!</div> -->
+  <!-- profolio is here -->
+  <div id="profolio" class="profolio">
+    <h3>PROFOLIO</h3>
+    <div class="profolioContent">
+      <div id="profolioSlider" class="flexslider custom-navigation profolioNavigation">
+        <a href="#" class="flex-prev"><img class="pageIcon prevPage" src="image/next-page.png" alt=""></a>
+        <a href="#" class="flex-next"><img class="pageIcon nextPage" src="image/next-page.png" alt=""></a>
+        <ul class="slides demoBtn">
+          <li>
+            <img class="hpNone"  src="image/profolio1@3x.png" alt="profolio">
+            <img  class="largeScreenNone" src="image/hpProfolio1@3x.png" alt="profolio">
+            <p class="flex-caption">UI Design<br>
+              Flight booking app for iOS
+            </p>
+          </li>
+          <li>
+            <img class="hpNone"  src="image/profolio2@3x.png" alt="profolio">
+            <img  class="largeScreenNone" src="image/hpProfolio2@3x.png" alt="profolio">
+            <p class="flex-caption">UI Design<br>
+              Movie ticket booking app for iOS
+            </p>
+          </li>
+          <li>
+            <img class="hpNone" src="image/profolio3@3x.png" alt="profolio">
+            <img class="largeScreenNone" src="image/hpProfolio3@3x.png" alt="profolio">
+            <p class="flex-caption">UI Resign<br>
+              Mcdelivery app for Android
+            </p>
+          </li>
+        </ul>
       </div>
-      <!-- <div class="balance"></div> -->
     </div>
+  </div>
 
 
-    <!-- <div class="demo">
-      <div class="demoFrame">
-      <div class="flexslider">
+  <div class="demo">
+    <div class="demoFrame">
+      <div id="demoSlider" class="flexslider demoFlexslider">
         <ul class="slides">
           <li>
             <div class="frame">
               <div class="frameTitle">
                 <h3>Flight <br>booking app</h3>
+                <i class="dot demoDot">●</i>
                 <p>UI DESIGN for ios</p>
               </div>
               <iframe src="https://www.youtube.com/embed/_4cprSQU5RI?rel=0&autoplay=1&loop=1&playlist=_4cprSQU5RI" frameborder="0" allowfullscreen></iframe>
@@ -134,6 +140,7 @@
             <div class="frame">
               <div class="frameTitle">
                 <h3>Movie ticket<br>booking app</h3>
+                <i class="dot demoDot">●</i>
                 <p>UI DESIGN for ios</p>
               </div>
               <iframe src="https://www.youtube.com/embed/Iuzql_HmoBE?rel=0&autoplay=1&loop=1&playlist=Iuzql_HmoBE" frameborder="0" allowfullscreen></iframe>
@@ -148,6 +155,7 @@
             <div class="frame">
               <div class="frameTitle">
                 <h3>Mcdonalds<br>delivery   app</h3>
+                <i class="dot demoDot">●</i>
                 <p>UI DESIGN for ios</p>
               </div>
               <iframe src="https://www.youtube.com/embed/_4cprSQU5RI?rel=0&autoplay=1&loop=1&playlist=zcvd93a07cE" frameborder="0" allowfullscreen></iframe>
@@ -160,86 +168,154 @@
           </li>
         </ul>
       </div>
-      <div class="custom-navigation">
+      <div class="custom-navigation demoNavigation">
         <a href="#" class="flex-prev"><img src="image/pinkArrow.png" alt=""><span class="hpNone">SEE </span>PREVIOUS</a>
-        <div class="custom-controls-container"></div>
         <a href="#" class="flex-next"><span class="hpNone">SEE </span>NEXT<img src="image/pinkArrow.png" alt=""></a>
+        <div class="custom-controls-container demo-controls-container"></div>
       </div>
     </div>
-    </div> -->
+  </div>
 
 
-    <!-- Contact is here -->
-    <div id="contact" class="contact">
-      <h3>CONTACT</h3>
-      <div class="container customContainer">
-        <div class="row">
-          <div class="col-12 col-sm-6 contactLeft">
-            <p>Click here to text me via email. If you would like to see detailed case study of my work please feel free to contact me.
-              Want to know more about me? You can follow me on
-              <a href="https://www.facebook.com/profile.php?id=1827884466"><span>Facebook</span></a>,
-              <a href="https://medium.com/@sodadada"><span>Medium</span></a> and
-              <a href="https://www.instagram.com/sodadadaiam/"><span>Instagram</span></a>.
-            </p>
-            <div class="mediaIcon">
-              <a href="https://www.facebook.com/profile.php?id=1827884466"><img src="image/facebook.png" alt="Facebook"></a>
-              <a href="https://medium.com/@sodadada"><img src="image/medium.png" alt="Medium"></a>
-              <a href="https://www.instagram.com/sodadadaiam/"><img src="image/instagram.png" alt="Instagram"></a>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 contactRight">
-            <!-- <script src="http://www.powr.io/powr.js" external-type=html></script>
-            <div class="powr-contact-form" id="8eb10070_1501728824"></div> -->
-
-            <!-- <form>
-              <div class="form-group row ">
-                <div class="col-12 col-sm-6">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name">
-                </div>
-
-                <div class="col-12 col-sm-6">
-                  <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
-              </div>
-
-              <div class="form-group">
-                <textarea class="form-control" id="inputMessage" rows="6"  placeholder="Message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary col-12">SEND</button>
-            </form> -->
+  <!-- Contact is here -->
+  <div id="contact" class="contact">
+    <h3>CONTACT</h3>
+    <div class="container customContainer">
+      <div class="row">
+        <div class="col-12 col-sm-6 contactLeft">
+          <p>Click here to text me via email. If you would like to see detailed case study of my work please feel free to contact me.
+            Want to know more about me? You can follow me on
+            <a href="##" onclick="window.open('https://www.facebook.com/profile.php?id=1827884466')">Facebook</a>,
+            <a href="##" onclick="window.open('https://medium.com/@sodadada')">Medium</a> and
+            <a href="##" onclick="window.open('https://www.instagram.com/sodadadaiam/')">Instagram</a>.
+          </p>
+          <div class="mediaIcon">
+            <a href="##" onclick="window.open('https://www.facebook.com/profile.php?id=1827884466')"></a>
+            <a href="##" onclick="window.open('https://medium.com/@sodadada')"></a>
+            <a href="##" onclick="window.open('https://www.instagram.com/sodadadaiam/')"></a>
           </div>
         </div>
 
+
+        <div class="col-12 col-sm-6 contactRight">
+          <div class="ss-form">
+            <iframe name="iframe_cqjrkkeb" id="iframe_cqjrkkeb" style="display:none;" onload="if(typeof sent_cqjrkkeb!='undefined'){window.location='index.html';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfNyRDjTUL7ha6tsfjmND_lcgAHtBRrrAj6s04hUVKXu_pcqw/formResponse" method="POST" id="ss-form" target="iframe_cqjrkkeb" autocomplete="on" onsubmit="sent_cqjrkkeb=true">
+              <ol role="list" class="ss-question-list" style="padding-left: 0;">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="ss-form-question errorbox-good" role="listitem">
+                      <div dir="auto" class="ss-item ss-item-required ss-text">
+                        <div class="ss-form-entry form-group">
+                          <input type="text" name="entry.1773709685" value="" class="ss-q-short" id="entry_1773709685" dir="auto" aria-label="Name  " title="" placeholder="Name">
+                          <div class="error-message" id="429416702_errorMessage">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div class="ss-form-question errorbox-good" role="listitem">
+                      <div dir="auto" class="ss-item ss-text">
+                        <div class="ss-form-entry form-group">
+
+                          <input type="text" name="entry.998241585" value="" class="ss-q-short" id="entry_998241585" dir="auto" aria-label="Subject  " title="" placeholder="Subject">
+                          <div class="error-message" id="1045883745_errorMessage">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="ss-form-question errorbox-good" role="listitem">
+                  <div dir="auto" class="ss-item ss-item-required ss-text">
+                    <div class="ss-form-entry form-group">
+
+                      <input type="text" name="entry.1404737775" value="" class="ss-q-short" id="entry_1404737775" dir="auto" aria-label="Email  " title="" placeholder="Email">
+                      <div class="error-message" id="1453178250_errorMessage"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ss-form-question errorbox-good" role="listitem">
+                  <div dir="auto" class="ss-item  ss-paragraph-text">
+                    <div class="ss-form-entry form-group">
+
+                      <textarea name="entry.597772191" rows="8" cols="0" class="ss-q-long" id="entry_597772191" dir="auto" aria-label="Message  " placeholder="Message"></textarea>
+                      <div class="error-message" id="1801213877_errorMessage"></div>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="draftResponse" value="[null,null,&quot;3719083729670689580&quot;]">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="fbzx" value="3719083729670689580">
+                <div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr">
+                  <label for="emailReceipt" style="display:inline;"></label>
+                </div>
+                <div class="ss-item ss-navigate">
+                  <table id="navigation-table">
+                    <tbody>
+                      <tr>
+                        <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                          <input type="submit" name="submit" value="SEND" id="ss-submit" class="jfk-button jfk-button-action customBtn">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </ol>
+            </form>
+          </div>
+        </div>
       </div>
 
-      <div class="copyRight"><p>Copyright © 2017 May Huang<br> Developed by Teng Lee</p></div>
     </div>
 
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-    <!-- FlexSlider -->
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript">
+    <div class="copyRight"><p>Copyright © 2017 May Huang<br> Developed by <span><a href="##" onclick="window.open('https://github.com/TengLee888')">Teng Lee</a></span></p></div>
+  </div>
 
 
+
+  <!-- For FlexSlider -->
+  <script defer src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript">
     // 漢堡包
-    $(document).click(function(e) {
-    //if the menu is visible
-      if($(".menu").css('left') =="0px"){
-        //if the click is outside of menu
-        if($(e.target).closest('.menu').length == 0){
-            $('.closed').click();
-        }
-      }
+    //點擊和漢堡以外的地方收回選單
+    $(document).on('click', function(){
+      console.log('click');
+      $('#navbarDiv').removeClass('show');
     });
 
 
-    // Hide header on scroll down, show on scroll up
+
+
+    // Function: Click navigation link and scroll to
+    $('.myScrollTop').click(function(){
+      const id = $(this).find('a').attr('href')
+      $('html,body').animate({
+        scrollTop:$(id).offset().top
+      },700);
+      // $('nav').removeClass('nav-down').addClass('nav-up');
+    });
+
+    $('.scrollToAbout').click(function(){
+      console.log('test');
+      $('html,body').animate({
+        scrollTop:$('#about').offset().top
+      },700);
+      // $('nav').removeClass('nav-down').addClass('nav-up');
+    });
+    $('.scrollToHome').click(function(){
+      console.log('test');
+      $('html,body').animate({
+        scrollTop:$('#banner').offset().top
+      },700);
+      // $('nav').removeClass('nav-down').addClass('nav-up');
+    });
+
+
+    //Function Hide header when mouse scroll down, show when mouse scroll up
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
@@ -247,63 +323,81 @@
 
     // on scroll, let the interval function know the user has scrolled
     $(window).scroll(function(event){
-        didScroll = true;
+      didScroll = true;
     });
 
     // run hasScrolled() and reset didScroll status
     setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250); //checks every 250ms if didScroll has changed
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 50); //checks every 250ms if didScroll has changed
 
     function hasScrolled() {
-        var st = $(this).scrollTop();
-        // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
-            return;
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down
-            $('nav').removeClass('nav-down').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if(st + $(window).height() < $(document).height()) {
-                $('nav').removeClass('nav-up').addClass('nav-down');
-            }
+      var st = $(this).scrollTop();
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+      return;
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+          $('nav').removeClass('nav-up').addClass('nav-down');
         }
-        lastScrollTop = st;
+      }
+      lastScrollTop = st;
     }
+
+
 
 
     // FlexSlider2
     $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a")
+      $('#profolioSlider').flexslider({
+        animation: 'slide',
+        customDirectionNav: $(".profolioNavigation a")
+      });
+
+      $('#demoSlider').flexslider({
+        animation: 'slide',
+        controlsContainer: $(".demo-controls-container"),
+        customDirectionNav: $(".demoNavigation a")
       });
     });
 
 
-    // Profolio page appear
-    // var triggle = document.querySelector(".triggle");
-    // var demo = document.querySelector(".demo");
-    // var esc = document.querySelector(".esc");
-    //
-    //
-    // triggle.addEventListener("click", function(){
-    //   demo.style.display = "block";
-    // });
-    // esc.addEventListener("click", function(){
-    //   fullScreen.style.display = "none";
-    // });
 
 
-    // $(".arrowDown").animate({ scrollTop: window.pageYOffset + $(window).height()}, 300);
-    </script>
+    // Function: Demo page appear on Screen
+    var triggle = document.querySelector(".demoBtn");
+    var demo = document.querySelector(".demo");
+    var body = document.querySelector("body")
+    var esc = document.querySelector(".escHome");
 
-  </body>
+    //Demo Page move to screen
+    triggle.addEventListener("click", function(){
+      demo.style.top = "40px";
+      body.style.overflow = "hidden";
+      demo.style.overflow = 'scroll';
+      demo.style.height = '100vh';
+      $('nav').removeClass('nav-up').addClass('nav-down');
+    });
+
+    //From demo page(Screen) back to main page
+    esc.addEventListener("click", function(){
+      demo.style.top = "-2000px";
+      body.style.overflow = "auto";
+    });
+
+
+
+
+  </script>
+
+</body>
 </html>

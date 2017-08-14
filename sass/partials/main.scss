@@ -1,4 +1,6 @@
 //Main
+@import "modules/color";
+
 *{
   box-shadow: 0 0 0 1px red;
 }
@@ -72,12 +74,14 @@ a {
 	font-size: 30px;
 	letter-spacing: 0.8px;
 	color: #c13368;
+  margin-bottom: 0;
   @media screen and (max-width: 576px) {
     font-size: 24px;
 	  letter-spacing: 0.7px;
   }
 }
 %greenSubtitle {
+  display: inline;
   font-family: Bungee;
 	font-size: 18px;
 	letter-spacing: 0.7px;
@@ -100,11 +104,16 @@ a {
   }
 }
 
-.balance{
-  height: 116px;
-  z-index: -1;
+.dot {
+  display: inline;
+  color: #9fcfda;
+  font-size: 34px;
+  line-height: 0;
+  margin-right: 7px;
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+  }
 }
-
 
 @media screen and (min-width: 576px) {
   .largeScreenNone{

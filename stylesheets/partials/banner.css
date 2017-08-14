@@ -37,8 +37,9 @@
   top: 87%;
   left: 0;
   right: 0;
+  animation-duration: 1.5s;
 }
-/* line 38, ../../sass/partials/banner.scss */
+/* line 39, ../../sass/partials/banner.scss */
 .banner .arrowDown:hover {
   content: url("../image/arrowDownHover.png");
 }
@@ -48,43 +49,43 @@
     display: none;
   }
 }
-/* line 47, ../../sass/partials/banner.scss */
+/* line 48, ../../sass/partials/banner.scss */
 .banner .hex {
   position: absolute;
 }
-/* line 50, ../../sass/partials/banner.scss */
+/* line 51, ../../sass/partials/banner.scss */
 .banner img.topRight {
   max-width: 12.98vw;
   top: 50px;
   right: 0px;
 }
 @media screen and (max-width: 576px) {
-  /* line 50, ../../sass/partials/banner.scss */
+  /* line 51, ../../sass/partials/banner.scss */
   .banner img.topRight {
     max-width: 80px;
   }
 }
-/* line 58, ../../sass/partials/banner.scss */
+/* line 59, ../../sass/partials/banner.scss */
 .banner img.bottomLeft {
   max-width: 18.36vw;
   bottom: -46px;
   left: 0;
 }
 @media screen and (max-width: 576px) {
-  /* line 58, ../../sass/partials/banner.scss */
+  /* line 59, ../../sass/partials/banner.scss */
   .banner img.bottomLeft {
     max-width: 109px;
     bottom: -19px;
   }
 }
-/* line 67, ../../sass/partials/banner.scss */
+/* line 68, ../../sass/partials/banner.scss */
 .banner img.bottomRight {
   max-width: 36.24vw;
   bottom: -45px;
   right: 0;
 }
 @media screen and (max-width: 576px) {
-  /* line 67, ../../sass/partials/banner.scss */
+  /* line 68, ../../sass/partials/banner.scss */
   .banner img.bottomRight {
     max-width: 226px;
     bottom: -20px;

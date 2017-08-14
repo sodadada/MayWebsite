@@ -4,16 +4,8 @@
 
 .contact {
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content:  space-between;
-  // align-items: center;
   min-height: 100vh;
-  // min-height: 700px;
-  @media screen and (max-width: 576px){
-    // height: 100vh;
-    // min-height: auto;
-  }
+  padding-bottom: 70px;
   background-color: $lightBlue;
   h3 {
     @extend %titleFormat;
@@ -32,56 +24,120 @@
       @media screen and (max-width: 576px){
         margin: 23px 0 32px;
       }
-      span{
-        color: $darkBlue
-      }
     }
     a {
-      :hover{
+      color: $darkBlue;
+      &:hover{
         text-decoration: underline;
       }
     }
     .mediaIcon {
       margin-bottom: 20px;
-      img{
+      a{
+        display: inline-block;
+        height: 52px;
+        width: 60px;
         margin-right: 16px;
+        background-image: url('../image/icon.png');
         @media screen and (max-width: 576px){
-          margin-right: 8px;
           height: 30px;
-          width: auto;
+          width: 35px;
+          margin-right: 8px;
+          background-size: 350%;
+        }
+      }
+      :first-child {
+        background-position: 0 53px;
+        &:hover{
+          background-position: 0 0;
+        }
+      }
+      :nth-child(2) {
+        background-position: 135px 52px;
+        &:hover{
+          background-position: 135px -1px;
+        }
+      }
+      :nth-child(3) {
+        background-position: 60px 53px;
+        &:hover{
+          background-position: 60px 0;
+        }
+      }
+      @media screen and (max-width: 576px){
+        :first-child {
+          background-position: 0 30px;
+        }
+        :nth-child(2) {
+          background-position: 78px 30px;
+        }
+        :nth-child(3) {
+          background-position: 35px 30px;
         }
       }
     }
   }
-  input, textarea {
-    border-radius: 0;
-    border: none;
-    color: #9fcfda;
-    background-color: rgba(255, 255, 255, 0.67);
-  }
-  input {
-    height: 40px;
-    @media screen and (max-width: 576px) {
-      height: 27px;
-    }
-  }
 
-  .form-group, #inputName {
-    @media screen and (max-width: 576px) {
-      margin-bottom: 9px;
+  .contactRight {
+    .col-md-6 {
+      padding-top: 2px;
     }
-  }
-  #inputMessage {
-    height: 225px;
-    @media screen and (max-width: 576px) {
-      height: 83px;
+    input, textarea {
+      width: 100%;
+      padding: 6px 12px;
+      border-radius: 0;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.67);
+      &:focus {
+        background-color: #fff;
+      }
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #9fcfda;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #9fcfda;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #9fcfda;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #9fcfda;
+      }
     }
-  }
+    input {
+      height: 40px;
+      @media screen and (max-width: 576px) {
+        height: 27px;
+      }
+    }
+    table {
+      width: 100%;
+    }
 
-  button {
-    border-radius: 0;
-    color: #fff;
-    background-color: $mediumBlue;
+    .form-group, #inputName {
+      @media screen and (max-width: 576px) {
+        margin-bottom: 9px;
+      }
+    }
+    textarea {
+      height: 225px;
+      @media screen and (max-width: 576px) {
+        height: 83px;
+      }
+    }
+
+    .customBtn {
+      border-radius: 0;
+      color: #fff;
+      background-color: $mediumBlue;
+      &:hover {
+        background-color: #154F5E;
+      }
+      @media screen and (max-width: 576px) {
+        padding: 0;
+      }
+    }
+
   }
   .copyRight {
     position: absolute;
@@ -96,16 +152,17 @@
       letter-spacing: 0.5px;
       text-align: center;
       color: #02303b;
+      @media screen and (max-width: 576px) {
+        font-size: 12px;
+      }
+      a {
+        color: inherit;
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
 
     }
   }
-}
-
-.subjuct {
-	width: 95px;
-	height: 28px;
-	font-family: PingFangTC;
-	font-size: 20px;
-	letter-spacing: 0.8px;
-	color: #9fcfda;
 }

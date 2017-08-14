@@ -64,4 +64,84 @@ min-height: 708px;;
 
 
 ### flexbox 圖片變形
-- align-self
+- 用align-self就可以了，看是要flex start 還是middle都可
+
+
+### FlexSlider2
+- 在同一頁顯示多個flexSlider
+```
+//這是原本的code
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlsContainer: $(".custom-controls-container"),
+    customDirectionNav: $(".custom-navigation a")
+  });
+});
+```
+由此可得知他是呼叫.flexslider，解法是用不同的id去命名
+```
+$(window).load(function() {
+  $('#profolioSlider').flexslider({
+    animation: 'slide',
+    customDirectionNav: $(".profolioNavigation a")
+  });
+
+  $('#demoSlider').flexslider({
+    animation: 'slide',
+    controlsContainer: $(".demo-controls-container"),
+    customDirectionNav: $(".demoNavigation a")
+  });
+});
+```
+
+### 不能改變的Contact From
+```
+<script src="http://www.powr.io/powr.js" external-type=html></script>
+<div class="powr-contact-form" id="8eb10070_1501728824"></div>
+```
+
+```
+const inputName = document.querySelector('input.form-control');
+const inputSubject = document.querySelector('input.user-success');
+const inputEmail = document.querySelector('input email');
+const inputmessage = document.querySelector('textarea.form-control');
+const inputBtn = document.querySelector('#submitButton');
+
+inputName.value = 'teng';
+inputSubject.value = 'test';
+inputEmail.value = 'coffeealcohol@gmail.com';
+inputmessage.value = 'test text area';
+realBtn.click();
+```
+
+
+### 能改變的Contact form
+
+- Google雲端
+  - 新增 > Google表單 > 右下角有一個？ > 返回舊表單
+- 編輯完後 *查看即時表單*
+- 開發者模式，從```<div class="ss-form">```開始複製到```</tr></tbody></table></div></ol></form></div>```
+
+```
+<iframe name="iframe_cqjrkkeb" id="iframe_cqjrkkeb" style="display:none;" onload="if(typeof sent_cqjrkkeb!='undefined'){window.location='googleForm.html';}"></iframe>
+```
+- 把上面這一串插在```<div class="ss-form">```後面
+  - 上面有一串權杖 cqjrkkeb，複製起來等下用
+- 在iframe後面form裡，改寫成這樣
+```
+target="iframe_cqjrkkeb"
+onsubmit="sent_cqjrkkeb=true"
+```
+- 表單填寫完後寄出重回自己的頁面
+```
+{window.location='頁面的名稱eg:googleForm.html';}
+```
+
+
+### padding-bottom
+- 除了與下一個DOM隔開距離
+- 子元素**使用absolute不想被覆蓋**也可以用這招喔
+
+
+### vh/vw 和 % 傻傻分不清楚
