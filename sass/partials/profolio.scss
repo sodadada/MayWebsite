@@ -3,6 +3,7 @@
 
 
 .profolio {
+  position: relative;
   min-height: 100vh;
   padding-bottom: 20px;
   h3 {
@@ -18,7 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: calc(100vh - 116px - 20px -20px);
     padding-top: calc((100vh - 120px - 600px) / 2);
     background-color: #fff;
     div{
@@ -104,5 +104,20 @@
     bottom: -20px;
   @media screen and (max-width: 576px){
     bottom: -20px;
+  }
+}
+
+
+.demoLink {
+  position: absolute;
+  width: 492px;
+  height: 415px;
+  top: calc(136px + ((100vh - 120px - 600px) / 2));
+  // background-color: black;
+  // opacity: 0.5;
+  z-index: 2;
+  @media screen and (max-width: 576px){
+    width: 220px;
+    top: 89px;
   }
 }

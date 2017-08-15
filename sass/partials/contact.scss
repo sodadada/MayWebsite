@@ -16,6 +16,7 @@
     margin-top: 60px;
     @media screen and (max-width: 576px){
       padding: 0 46px;
+      margin-top: 30px;
     }
     p{
       @extend %font;
@@ -67,12 +68,21 @@
       @media screen and (max-width: 576px){
         :first-child {
           background-position: 0 30px;
+          &:hover{
+            background-position: 0 0;
+          }
         }
         :nth-child(2) {
           background-position: 78px 30px;
+          &:hover{
+            background-position: 78px 0;
+          }
         }
         :nth-child(3) {
           background-position: 35px 30px;
+          &:hover{
+            background-position: 35px 0;
+          }
         }
       }
     }

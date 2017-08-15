@@ -33,12 +33,11 @@ nav.customNav{
       }
     }
     .customBrand {
-      font-size: 29px;
-    	letter-spacing: 0.8px;
-    	color: $darkBlue;
-      @media screen and (max-width: 768px){
-        font-size: 18px;
-      	letter-spacing: 1px;
+      color: $darkBlue;
+      img{
+        @media screen and (max-width: 768px){
+        height: 20px;
+        }
       }
     }
   }
@@ -54,6 +53,7 @@ nav.customNav{
 
   // right side list
   ul a {
+    font-family: monda;
     margin-left: 40px;
     font-size: 20px;
   	letter-spacing: 0.8px;

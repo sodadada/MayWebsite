@@ -37,7 +37,8 @@
     img {
       align-self: flex-start;
       @media screen and (max-width: 768px){
-        content:url("../image/hpAbout.png");
+        content:url("../image/hpAbout@2x.png");
+        width: 215px;
         align-self: flex-end;
         margin: 0;
       }

@@ -40,35 +40,33 @@ nav.customNav .customNavBrand .cumtomLogo img {
 }
 /* line 35, ../../sass/partials/nav.scss */
 nav.customNav .customNavBrand .customBrand {
-  font-size: 29px;
-  letter-spacing: 0.8px;
   color: #154f5e;
 }
 @media screen and (max-width: 768px) {
-  /* line 35, ../../sass/partials/nav.scss */
-  nav.customNav .customNavBrand .customBrand {
-    font-size: 18px;
-    letter-spacing: 1px;
+  /* line 37, ../../sass/partials/nav.scss */
+  nav.customNav .customNavBrand .customBrand img {
+    height: 20px;
   }
 }
-/* line 47, ../../sass/partials/nav.scss */
+/* line 46, ../../sass/partials/nav.scss */
 nav.customNav .custom-toggler {
   line-height: 33px;
   padding: 0;
 }
-/* line 50, ../../sass/partials/nav.scss */
+/* line 49, ../../sass/partials/nav.scss */
 nav.customNav .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1e8ba6' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-/* line 56, ../../sass/partials/nav.scss */
+/* line 55, ../../sass/partials/nav.scss */
 nav.customNav ul a {
+  font-family: monda;
   margin-left: 40px;
   font-size: 20px;
   letter-spacing: 0.8px;
   color: #1e8ba6;
 }
 @media screen and (max-width: 768px) {
-  /* line 56, ../../sass/partials/nav.scss */
+  /* line 55, ../../sass/partials/nav.scss */
   nav.customNav ul a {
     text-align: center;
     margin: 0;

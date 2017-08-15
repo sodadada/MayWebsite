@@ -3,16 +3,8 @@
 
 
 .demo {
-  position: fixed;
-  top: -2000px;
-  left: 0;
-  min-height: calc(100vh - 40px);
-  width: 100%;
-  z-index: 100;
+  min-height: calc(100vh - 60px);
   background-color: #fff;
-  // background-image: url('../image/demoBgMod.png');
-  background-size: cover;
-  box-shadow: 0 -100px 0 0 #fff inset;
   border-top: $lightPink solid 80px;
   border-bottom: $lightPink solid 80px;
   @media screen and (max-height: 768px) {
@@ -66,12 +58,11 @@
     }
     .frameTitle h3 {
       @extend %demoTitle;
-      font-size: 24px;
     }
     .demoDot {
       display: inline;
       color: #9fcfda;
-      font-size: 25px;
+      font-size: 18px;
       line-height: 0;
       margin: 0;
     }
@@ -119,11 +110,11 @@
       }
     }
     a {
-      font-family: LucidaGrande;
+      font-family: monda;
       font-size: 26px;
       letter-spacing: 0.7px;
       color: $lightPink;
-      :focus {
+      &:focus {
         text-decoration: none;
       }
       @media screen and (max-width: 768px) {
@@ -142,4 +133,20 @@
 }
 .demo .custom-controls-container ol{
   display: none;
+}
+
+
+.esc {
+  height: 60px;
+  background: $lightPink;
+  img {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 18px;
+  }
+  @media screen and (max-width: 576px) {
+    height: 50px;
+  }
 }

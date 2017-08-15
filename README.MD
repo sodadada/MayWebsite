@@ -120,20 +120,23 @@ realBtn.click();
 
 - Google雲端
   - 新增 > Google表單 > 右下角有一個？ > 返回舊表單
-- 編輯完後 *查看即時表單*
-- 開發者模式，從```<div class="ss-form">```開始複製到```</tr></tbody></table></div></ol></form></div>```
+  - 編輯完後 上面有一個查看回應 點選建立表單
+- 點選 *查看即時表單*
+  - 開發者模式，從```<div class="ss-form">```開始複製到```</tr></tbody></table></div></ol></form></div>```
 
-```
-<iframe name="iframe_cqjrkkeb" id="iframe_cqjrkkeb" style="display:none;" onload="if(typeof sent_cqjrkkeb!='undefined'){window.location='googleForm.html';}"></iframe>
-```
+
+- 自訂6~8英文權杖, 例如hahaha
+  ```
+  <iframe name="iframe_權杖" id="iframe_權杖" style="display:none;" onload="if(typeof sent_權杖!='undefined'){window.location='googleForm.html';}"></iframe>
+  ```
+
 - 把上面這一串插在```<div class="ss-form">```後面
-  - 上面有一串權杖 cqjrkkeb，複製起來等下用
-- 在iframe後面form裡，改寫成這樣
+- 在iframe後面的form Tag裡，改寫成這樣
 ```
-target="iframe_cqjrkkeb"
-onsubmit="sent_cqjrkkeb=true"
+target="iframe_權杖"
+onsubmit="sent_權杖=true"
 ```
-- 表單填寫完後寄出重回自己的頁面
+- 當表單填寫完後寄出重回自己的頁面的功能：
 ```
 {window.location='頁面的名稱eg:googleForm.html';}
 ```
@@ -145,3 +148,36 @@ onsubmit="sent_cqjrkkeb=true"
 
 
 ### vh/vw 和 % 傻傻分不清楚
+
+### box-shadow: 0 -100px 0 0 #fff inset;
+
+
+
+```
+// Function: Demo page appear on Screen
+// var triggle = document.querySelector(".demoBtn");
+// var demo = document.querySelector(".demo");
+// var body = document.querySelector("body")
+// var esc = document.querySelector(".escHome");
+//
+// //Demo Page move to screen
+// triggle.addEventListener("click", function(){
+//   demo.style.top = "40px";
+//   body.style.overflow = "hidden";
+//   demo.style.overflow = 'scroll';
+//   demo.style.height = '100vh';
+//   $('nav').removeClass('nav-up').addClass('nav-down');
+// });
+//
+// //From demo page(Screen) back to main page
+// esc.addEventListener("click", function(){
+//   demo.style.top = "-2000px";
+//   body.style.overflow = "auto";
+// });
+```
+
+```
+pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+```
+
+location.reload();

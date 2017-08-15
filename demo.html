@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>May Huang Profolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexsliderOriginal.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="stylesheets/print.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-default navbar-toggleable-sm customNav nav-down">
-        <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand customNavBrand" href="#">
-            <span class="cumtomLogo"><img src="image/logo.svg" alt="logo"></span>
-            <span class="customBrand">May Huang</span>
-        </a>
+<head>
+  <title>Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="stylesheets/print.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-toggleable-sm fixed-top customNav nav-down hpNone">
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand customNavBrand" href="index.html#banner">
+        <span class="cumtomLogo"><img src="image/logo@2x.png" alt="logo"></span>
+        <span class="customBrand"><img src="image/name.svg" alt="May Huang"></span>
+      </a>
 
 
-        <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#profolio">Profolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#banner">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#profolio">Profolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="esc">
+      <a href="index.html#profolio">
+        <img src="image/esc@2x.png" alt="esc"></div>
+      </a>
 
 
-    <div class="demo">
-      <div class="demoFrame">
-      <div class="flexslider">
+  <div class="demo">
+    <div class="demoFrame">
+      <div id="demoSlider" class="flexslider demoFlexslider">
         <ul class="slides">
           <li>
             <div class="frame">
               <div class="frameTitle">
                 <h3>Flight <br>booking app</h3>
+                <i class="fa fa-circle dot demoDot" aria-hidden="true"></i>
                 <p>UI DESIGN for ios</p>
               </div>
               <iframe src="https://www.youtube.com/embed/_4cprSQU5RI?rel=0&autoplay=1&loop=1&playlist=_4cprSQU5RI" frameborder="0" allowfullscreen></iframe>
@@ -63,6 +72,7 @@
             <div class="frame">
               <div class="frameTitle">
                 <h3>Movie ticket<br>booking app</h3>
+                <i class="fa fa-circle dot demoDot" aria-hidden="true"></i>
                 <p>UI DESIGN for ios</p>
               </div>
               <iframe src="https://www.youtube.com/embed/Iuzql_HmoBE?rel=0&autoplay=1&loop=1&playlist=Iuzql_HmoBE" frameborder="0" allowfullscreen></iframe>
@@ -77,7 +87,8 @@
             <div class="frame">
               <div class="frameTitle">
                 <h3>Mcdonalds<br>delivery   app</h3>
-                <p>UI DESIGN for ios</p>
+                <i class="fa fa-circle dot demoDot" aria-hidden="true"></i>
+                <p>UI REDESIGN for Android</p>
               </div>
               <iframe src="https://www.youtube.com/embed/_4cprSQU5RI?rel=0&autoplay=1&loop=1&playlist=zcvd93a07cE" frameborder="0" allowfullscreen></iframe>
               <div class="frameP">
@@ -89,29 +100,27 @@
           </li>
         </ul>
       </div>
-      <div class="custom-navigation">
-        <a href="#" class="flex-prev"><img src="image/pinkArrow.png" alt=""><span class="hpNone">SEE </span>PREVIOUS</a>
-        <div class="custom-controls-container"></div>
-        <a href="#" class="flex-next"><span class="hpNone">SEE </span>NEXT<img src="image/pinkArrow.png" alt=""></a>
+      <div class="custom-navigation demoNavigation">
+        <a href="#" class="flex-prev"><img src="image/pinkArrow@2x.png" alt=""><span class="hpNone">SEE </span>PREVIOUS</a>
+        <a href="#" class="flex-next"><span class="hpNone">SEE </span>NEXT<img src="image/pinkArrow@2x.png" alt=""></a>
+        <div class="custom-controls-container demo-controls-container"></div>
       </div>
     </div>
-    </div>
+  </div>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-    <!-- FlexSlider -->
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript">
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.demoFlexslider.js"></script>
+  <script type="text/javascript">
 
-    // FlexSlider2
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a")
-      });
+  // FlexSlider2
+  $(window).load(function() {
+    $('#demoSlider').flexslider({
+      animation: 'slide',
+      controlsContainer: $(".demo-controls-container"),
+      customDirectionNav: $(".demoNavigation a")
     });
-    </script>
-  </body>
+  });
+  </script>
+</body>
 </html>
