@@ -25,16 +25,15 @@
       <button id="nav-btn" class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand customNavBrand scrollToHome" href="#banner">
-        <span class="cumtomLogo"><img src="image/logo@2x.png" alt="logo"></span>
-        <span class="customBrand"><img src="image/name.svg" alt="May Huang"></span>
+      <a class="navbar-brand customNavBrand scrollToHome" href="#home">
+        <img class="logo" src="image/logo@2x.png" alt="logo">
+        <img class="name" src="image/name.svg" alt="May Huang">
       </a>
-
 
       <div class="collapse navbar-collapse navbar-right" id="navbarDiv">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item myScrollTop active">
-            <a class="nav-link escHome" href="#banner" data-toggle="collapse" data-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item myScrollTop">
+            <a class="nav-link" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
           </li>
           <li class="nav-item myScrollTop">
             <a class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
@@ -51,8 +50,10 @@
   </header>
 
 
-  <!-- banner is here -->
-  <div id="banner" class="banner">
+
+
+  <!-- home is here -->
+  <div id="home" class="home">
     <div>
       <h3>HELLO! <br class="largeScreenNone">I AM <br class="largeScreenNone">MAY.<br>
         A UI <br class="largeScreenNone">Designer <br class="largeScreenNone">BASED IN <br class="largeScreenNone">TAIWAN.
@@ -66,20 +67,25 @@
   </div>
 
 
+
+
   <!-- about is here -->
   <div id="about" class="about ">
     <h3>ABOUT</h3>
     <div class="pinkArea">
       <img src="image/about.png" alt="personalPhoto">
       <div>
-        <h4>MAY<br>HUANG </h4>
-        <i class="fa fa-circle dot" aria-hidden="true"></i><p class="subTitle">UI DESIGNER</p>
-        <p>Hi there, I’m a visual user interface (UI) designer driven by passion and conviction. I firmly believe that ‘’There is no perfect design, but design is about solving problems.’’
+        <h4>MAY<br>HUANG</h4>
+        <i class="fa fa-circle dot" aria-hidden="true"></i>
+        <p class="subTitle">UI DESIGNER</p>
+        <p>Hi there, I’m a visual user interface (UI) designer driven by passion and conviction. I firmly believe that "There is no perfect design, but design is about solving problems."
           Try to make technology simpler and delightful to use.
         </p>
       </div>
     </div>
   </div>
+
+
 
 
   <!-- profolio is here -->
@@ -125,7 +131,7 @@
     <h3>CONTACT</h3>
     <div class="container customContainer">
       <div class="row">
-        <div class="col-12 col-sm-6 contactLeft">
+        <div class="col-12 col-md-6 contactLeft">
           <p>Click here to text me via email. If you would like to see detailed case study of my work please feel free to contact me.
             Want to know more about me? You can follow me on
             <a href="##" onclick="window.open('https://www.facebook.com/profile.php?id=1827884466')">Facebook</a>,
@@ -140,7 +146,7 @@
         </div>
 
 
-        <div class="col-12 col-sm-6 contactRight">
+        <div class="col-12 col-md-6 contactRight">
           <div class="ss-form">
             <iframe name="iframe_cqjrkkb" id="iframe_cqjrkkb" style="display:none;" onload="if(typeof sent_cqjrkkb!='undefined'){window.location='index.html#contact'; location.reload();}"></iframe>
             <form action="https://docs.google.com/forms/d/e/1FAIpQLScOhf4gaxODgJ_Yuw2oGQLSJiDwd8U4m5vFEvK1axYyVUDrMA/formResponse" method="POST" id="ss-form" target="iframe_cqjrkkb" autocomplete="on" onsubmit="sent_cqjrkkb=true">
@@ -237,16 +243,14 @@
   });
 
   $('.scrollToAbout').click(function(){
-    console.log('test');
     $('html,body').animate({
       scrollTop:$('#about').offset().top
     },700);
     // $('nav').removeClass('nav-down').addClass('nav-up');
   });
   $('.scrollToHome').click(function(){
-    console.log('test');
     $('html,body').animate({
-      scrollTop:$('#banner').offset().top
+      scrollTop:$('#home').offset().top
     },700);
     // $('nav').removeClass('nav-down').addClass('nav-up');
   });

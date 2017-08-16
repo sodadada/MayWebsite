@@ -1,0 +1,99 @@
+/* line 5, ../../sass/partials/home.scss */
+.home {
+  position: relative;
+  background-color: #e6f6fb;
+  height: 100vh;
+}
+/* line 9, ../../sass/partials/home.scss */
+.home div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* line 16, ../../sass/partials/home.scss */
+.home div h3 {
+  font-family: Bungee;
+  text-align: center;
+  color: #1e8ba6;
+  font-size: 40px;
+  letter-spacing: 2.1px;
+}
+@media screen and (max-width: 576px) {
+  /* line 16, ../../sass/partials/home.scss */
+  .home div h3 {
+    text-align: left;
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: 1.4px;
+  }
+}
+/* line 31, ../../sass/partials/home.scss */
+.home .arrowDown {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  top: 87%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation-duration: 1.5s;
+}
+/* line 40, ../../sass/partials/home.scss */
+.home .arrowDown:hover {
+  content: url("../image/arrowDownHover.png");
+}
+@media screen and (max-width: 576px) {
+  /* line 31, ../../sass/partials/home.scss */
+  .home .arrowDown {
+    display: none;
+  }
+}
+/* line 48, ../../sass/partials/home.scss */
+.home .hex {
+  position: absolute;
+}
+/* line 51, ../../sass/partials/home.scss */
+.home img.topRight {
+  max-width: 12.98vw;
+  top: 60px;
+  right: 0px;
+}
+@media screen and (max-width: 768px) {
+  /* line 51, ../../sass/partials/home.scss */
+  .home img.topRight {
+    top: 47px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 51, ../../sass/partials/home.scss */
+  .home img.topRight {
+    max-width: 80px;
+  }
+}
+/* line 62, ../../sass/partials/home.scss */
+.home img.bottomLeft {
+  max-width: 18.36vw;
+  bottom: -46px;
+  left: 0;
+}
+@media screen and (max-width: 576px) {
+  /* line 62, ../../sass/partials/home.scss */
+  .home img.bottomLeft {
+    max-width: 109px;
+    bottom: -19px;
+  }
+}
+/* line 71, ../../sass/partials/home.scss */
+.home img.bottomRight {
+  max-width: 36.24vw;
+  bottom: -45px;
+  right: 0;
+}
+@media screen and (max-width: 576px) {
+  /* line 71, ../../sass/partials/home.scss */
+  .home img.bottomRight {
+    max-width: 226px;
+    bottom: -20px;
+  }
+}

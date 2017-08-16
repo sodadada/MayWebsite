@@ -1,6 +1,7 @@
 //About
 @import "modules/color";
-
+//小於768px 設計和排列方式改變
+//小於576px 圖片和字變小
 
 .about {
   display: flex;
@@ -11,19 +12,22 @@
   @media screen and (max-width: 768px){
     display: block;
     background-color: $lightPink;
-    padding: 0;
   }
+
+  // title
   h3 {
     padding-bottom: 33px;
     margin: 33px 0 0 0;
     @extend %title;
-    color: lightPink;
+    color: $lightPink;
     @media screen and (max-width: 768px){
       padding: 20px;
       margin: 0;
       background-color: #fff;
     }
   }
+
+  //Include photo and text content
   .pinkArea {
     display: flex;
     max-width: 1120px;
@@ -34,29 +38,36 @@
       flex-direction: column;
       margin-bottom: 0;
     }
+
+    //personal photo
     img {
       align-self: flex-start;
       @media screen and (max-width: 768px){
         content:url("../image/hpAbout@2x.png");
-        width: 215px;
+        width: 427px;
+        height: auto;
         align-self: flex-end;
-        margin: 0;
+      }
+      @media screen and (max-width: 576px){
+        width: 215px;
       }
     }
+
+    //text content
     div {
       margin: 80px 80px 60px 60px;
       @media screen and (max-width: 768px){
         margin: 0 47px 0 33px;
       }
+      //MAY HUANG
       :first-child {
         font-family: Bungee;
       	font-size: 48px;
       	letter-spacing: 1.3px;
         line-height: 1;
-      	color: #c13368;
-        margin-bottom: 0;
-        @media screen and (max-width: 768px){
-          margin: 0;
+      	color: $darkPing;
+        margin: 0;
+        @media screen and (max-width: 576px){
           font-size: 30px;
 	        letter-spacing: 0.8px;
         }
@@ -69,7 +80,7 @@
         letter-spacing: 1px;
         color: $mediumBlue;
         margin: 0px;
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 576px){
           font-size: 18px;
           letter-spacing: 0.7px;
         }
@@ -78,7 +89,7 @@
         margin-top: 28px;
         @extend %font;
         color: #fff;
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 576px){
           font-size: 15px;
         	line-height: 1.47;
         	letter-spacing: 1.6px;

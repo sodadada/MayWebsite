@@ -1,37 +1,49 @@
 //Contact
 @import "modules/color";
-
+//小於768px 設計和排列方式改變
+//小於576px 圖片和字變小
 
 .contact {
-  position: relative;
+  position: relative;  // let footer place at the bottom
   min-height: 100vh;
-  padding-bottom: 70px;
+  padding-bottom: 70px;  //for the space of footer
   background-color: $lightBlue;
+
+  // title
   h3 {
     @extend %titleFormat;
     color: $darkBlue;
     border: solid 4px #ffffff;
   }
+
+  // content below title
   .customContainer {
     margin-top: 60px;
     @media screen and (max-width: 576px){
       padding: 0 46px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
+
+    // leftside paragraph
     p{
       @extend %font;
       color: $mediumBlue;
       margin-bottom: 110px;
-      @media screen and (max-width: 576px){
+      @media screen and (max-width: 768px){
         margin: 23px 0 32px;
       }
-    }
-    a {
-      color: $darkBlue;
-      &:hover{
-        text-decoration: underline;
+
+      //social media link in paragraph
+      a {
+        color: $darkBlue;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
+
+
+    //social media icon
     .mediaIcon {
       margin-bottom: 20px;
       a{
@@ -88,9 +100,10 @@
     }
   }
 
+  //rightside form
   .contactRight {
     .col-md-6 {
-      padding-top: 2px;
+      padding-top: 2px; //focus decoration not enough space
     }
     input, textarea {
       width: 100%;
@@ -136,6 +149,7 @@
       }
     }
 
+    // send button
     .customBtn {
       border-radius: 0;
       color: #fff;
@@ -147,20 +161,20 @@
         padding: 0;
       }
     }
-
   }
+
+  // footer
   .copyRight {
     position: absolute;
     width: 300px;
     bottom: 0;
     left: 50%;
     margin-left: -150px;
-
     p {
+      text-align: center;
       font-size: 16px;
       line-height: normal;
       letter-spacing: 0.5px;
-      text-align: center;
       color: #02303b;
       @media screen and (max-width: 576px) {
         font-size: 12px;
@@ -172,7 +186,6 @@
           text-decoration: underline;
         }
       }
-
     }
   }
 }

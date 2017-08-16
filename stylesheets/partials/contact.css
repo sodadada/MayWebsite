@@ -5,7 +5,7 @@ Use "@extend %titleFormat !optional" if the extend should be able to fail.
 
 
 Backtrace:
-/Users/tenglee/Desktop/repository/MayWebsite/sass/partials/contact.scss:11
+/Users/tenglee/Desktop/repository/MayWebsite/sass/partials/contact.scss:14
 /Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
 /Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `block in each_value'
 /Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `each'

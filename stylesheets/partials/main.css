@@ -8,7 +8,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* line 108, ../../sass/partials/main.scss */
+/* line 105, ../../sass/partials/main.scss */
 .dot {
   display: inline;
   color: #9fcfda;
@@ -17,25 +17,27 @@ a:hover {
   margin-right: 7px;
 }
 @media screen and (max-width: 768px) {
-  /* line 108, ../../sass/partials/main.scss */
+  /* line 105, ../../sass/partials/main.scss */
   .dot {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 576px) {
-  /* line 120, ../../sass/partials/main.scss */
+  /* line 117, ../../sass/partials/main.scss */
   .largeScreenNone {
     display: none !important;
   }
 }
-@media screen and (max-width: 576px) {
-  /* line 127, ../../sass/partials/main.scss */
-  .hpNone {
+@media screen and (max-width: 768px) {
+  /* line 124, ../../sass/partials/main.scss */
+  .tabletNone {
     display: none !important;
   }
 }
-/* line 133, ../../sass/partials/main.scss */
-.block {
-  display: block;
+@media screen and (max-width: 576px) {
+  /* line 131, ../../sass/partials/main.scss */
+  .hpNone {
+    display: none !important;
+  }
 }

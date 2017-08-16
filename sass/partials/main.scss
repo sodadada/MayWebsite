@@ -38,34 +38,31 @@ a {
 
 
 %title {
-  text-align: center;
   font-family: Bungee;
+  text-align: center;
 	font-size: 50px;
 	letter-spacing: 1.3px;
   @media screen and (max-width: 576px){
-    margin-bottom: 20px;
     font-size: 28px;
     letter-spacing: 0.7px;
+    margin-bottom: 20px; //no use at about
   }
 }
 %title2 {
   font-family: Bungee;
   font-size: 30px;
   letter-spacing: 0.8px;
-  color: #c13368;
+  color: $darkPing;
 }
 
 
 %titleFormat {
-  line-height: 116px;
-  width: 100%;
-  text-align: center;
-  margin: 0;
   @extend %title;
+  width: 100%;
+  line-height: 116px;
+  margin: 0;
   @media screen and (max-width: 576px){
     line-height: 65px;
-    font-size: 28px;
-    letter-spacing: 0.7px;
   }
 }
 
@@ -74,7 +71,7 @@ a {
   font-family: Bungee;
 	font-size: 30px;
 	letter-spacing: 0.8px;
-	color: #c13368;
+	color: $darkPing;
   margin-bottom: 0;
   @media screen and (max-width: 576px) {
     font-size: 24px;
@@ -82,8 +79,8 @@ a {
   }
 }
 %greenSubtitle {
-  display: inline;
   font-family: Bungee;
+  display: inline;
 	font-size: 18px;
 	letter-spacing: 0.7px;
 	color: $mediumBlue;
@@ -123,13 +120,15 @@ a {
 }
 
 
-@media screen and (max-width: 576px) {
-  .hpNone{
+@media screen and (max-width: 768px) {
+  .tabletNone{
     display: none !important;
   }
 }
 
 
-.block {
-  display: block;
+@media screen and (max-width: 576px) {
+  .hpNone{
+    display: none !important;
+  }
 }

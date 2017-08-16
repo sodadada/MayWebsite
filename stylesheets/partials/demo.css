@@ -1,11 +1,11 @@
 /*
-Sass::SyntaxError: ".demo .frame .frameTitle h3" failed to @extend "%demoTitle".
+Sass::SyntaxError: ".demo .demoFrame .demoFlexslider .frame .frameTitle h3" failed to @extend "%demoTitle".
 The selector "%demoTitle" was not found.
 Use "@extend %demoTitle !optional" if the extend should be able to fail.
 
 
 Backtrace:
-/Users/tenglee/Desktop/repository/MayWebsite/sass/partials/demo.scss:60
+/Users/tenglee/Desktop/repository/MayWebsite/sass/partials/demo.scss:92
 /Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
 /Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `block in each_value'
 /Users/tenglee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/util/subset_map.rb:105:in `each'
@@ -33,4 +33,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: \".demo .frame .frameTitle h3\" failed to @extend \"%demoTitle\".\A The selector \"%demoTitle\" was not found.\A Use \"@extend %demoTitle !optional\" if the extend should be able to fail.\A "; }
+  content: "Sass::SyntaxError: \".demo .demoFrame .demoFlexslider .frame .frameTitle h3\" failed to @extend \"%demoTitle\".\A The selector \"%demoTitle\" was not found.\A Use \"@extend %demoTitle !optional\" if the extend should be able to fail.\A "; }

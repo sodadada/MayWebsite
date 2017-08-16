@@ -1,82 +1,84 @@
 /* line 5, ../../sass/partials/nav.scss */
 nav.customNav {
-  font-family: AmericanTypewriter;
   background-color: #fff;
   transition: top 0.2s ease-in-out;
+  height: 60px;
 }
 @media screen and (min-width: 992px) {
   /* line 5, ../../sass/partials/nav.scss */
   nav.customNav {
     padding: 0 60px;
-    height: 60px;
   }
 }
 @media screen and (max-width: 768px) {
   /* line 5, ../../sass/partials/nav.scss */
   nav.customNav {
+    height: auto;
     padding: 5px 24px;
   }
 }
-/* line 20, ../../sass/partials/nav.scss */
+/* line 18, ../../sass/partials/nav.scss */
 nav.customNav .customNavBrand {
   display: flex;
   align-items: center;
 }
-/* line 23, ../../sass/partials/nav.scss */
-nav.customNav .customNavBrand .cumtomLogo img {
-  height: 40px;
+/* line 21, ../../sass/partials/nav.scss */
+nav.customNav .customNavBrand .logo {
   width: 40px;
-  padding: 0;
+  height: auto;
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 23, ../../sass/partials/nav.scss */
-  nav.customNav .customNavBrand .cumtomLogo img {
-    height: 30px;
+  /* line 21, ../../sass/partials/nav.scss */
+  nav.customNav .customNavBrand .logo {
     width: 30px;
-    font-size: 18px;
-    letter-spacing: 1px;
   }
 }
-/* line 35, ../../sass/partials/nav.scss */
-nav.customNav .customNavBrand .customBrand {
+/* line 29, ../../sass/partials/nav.scss */
+nav.customNav .customNavBrand .name {
   color: #154f5e;
 }
 @media screen and (max-width: 768px) {
-  /* line 37, ../../sass/partials/nav.scss */
-  nav.customNav .customNavBrand .customBrand img {
+  /* line 29, ../../sass/partials/nav.scss */
+  nav.customNav .customNavBrand .name {
     height: 20px;
   }
 }
-/* line 46, ../../sass/partials/nav.scss */
+/* line 38, ../../sass/partials/nav.scss */
+nav.customNav ul a {
+  font-family: monda;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: #1e8ba6;
+  margin-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  /* line 38, ../../sass/partials/nav.scss */
+  nav.customNav ul a {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    padding: 4px 0;
+    margin: 0;
+  }
+}
+/* line 54, ../../sass/partials/nav.scss */
 nav.customNav .custom-toggler {
   line-height: 33px;
   padding: 0;
 }
-/* line 49, ../../sass/partials/nav.scss */
+/* line 57, ../../sass/partials/nav.scss */
 nav.customNav .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1e8ba6' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-/* line 55, ../../sass/partials/nav.scss */
-nav.customNav ul a {
-  font-family: monda;
-  margin-left: 40px;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  color: #1e8ba6;
-}
-@media screen and (max-width: 768px) {
-  /* line 55, ../../sass/partials/nav.scss */
-  nav.customNav ul a {
-    text-align: center;
-    margin: 0;
-    font-size: 18px;
-    letter-spacing: 0.6px;
-    padding: 4px 0;
-  }
-}
 
-/* line 71, ../../sass/partials/nav.scss */
+/* line 64, ../../sass/partials/nav.scss */
 .nav-up {
   top: -60px;
+}
+@media screen and (max-width: 768px) {
+  /* line 64, ../../sass/partials/nav.scss */
+  .nav-up {
+    top: -50px;
+  }
 }
