@@ -3,8 +3,10 @@
 
 //esc to main page profolio
 .esc {
-  height: 60px;
   background: $lightPink;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
     height: 48px;
   }
