@@ -885,12 +885,12 @@ a:hover {
 /* line 40, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider {
   width: calc(100vw - 80px);
-  margin-bottom: 75px;
+  margin-bottom: 35px;
 }
 /* line 45, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider .frame {
   max-width: 1200px;
-  padding-top: 80px;
+  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;

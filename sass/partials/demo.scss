@@ -39,12 +39,12 @@
     position: relative;  //for prevPage and next page position
     .demoFlexslider {
       width: calc(100vw - 80px);
-      margin-bottom: 75px;
+      margin-bottom: 35px;
 
       //include video, title and paragraph
       .frame {
         max-width: 1200px;
-        padding-top: 80px;
+        padding-top: 40px;
         margin-left: auto;
         margin-right: auto;
         overflow: auto;
