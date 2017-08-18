@@ -86,11 +86,6 @@ nav.customNav .custom-toggler .navbar-toggler-icon {
   }
 }
 
-/* line 4, ../sass/partials/main.scss */
-* {
-  box-shadow: 0 0 0 1px red;
-}
-
 /* line 8, ../sass/partials/main.scss */
 a {
   cursor: pointer;
