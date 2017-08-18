@@ -41,10 +41,10 @@
 
     //personal photo
     img {
+      width: 380px;
       align-self: flex-start;
       @media screen and (max-width: 768px){
         content:url("../image/hpAbout@2x.png");
-        width: 427px;
         height: auto;
         align-self: flex-end;
       }

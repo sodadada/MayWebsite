@@ -86,6 +86,11 @@ nav.customNav .custom-toggler .navbar-toggler-icon {
   }
 }
 
+/* line 4, ../sass/partials/main.scss */
+* {
+  box-shadow: 0 0 0 1px red;
+}
+
 /* line 8, ../sass/partials/main.scss */
 a {
   cursor: pointer;
@@ -383,13 +388,13 @@ a:hover {
 }
 /* line 43, ../sass/partials/about.scss */
 .about .pinkArea img {
+  width: 380px;
   align-self: flex-start;
 }
 @media screen and (max-width: 768px) {
   /* line 43, ../sass/partials/about.scss */
   .about .pinkArea img {
     content: url("../image/hpAbout@2x.png");
-    width: 427px;
     height: auto;
     align-self: flex-end;
   }
@@ -973,6 +978,8 @@ a:hover {
 }
 /* line 129, ../sass/partials/demo.scss */
 .demo .demoNavigation img {
+  display: inline-block;
+  vertical-align: middle;
   width: 33px;
   height: auto;
 }
@@ -983,52 +990,61 @@ a:hover {
     margin-top: -5px;
   }
 }
-/* line 137, ../sass/partials/demo.scss */
+/* line 139, ../sass/partials/demo.scss */
 .demo .demoNavigation .flex-prev img {
   margin-right: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 137, ../sass/partials/demo.scss */
+  /* line 139, ../sass/partials/demo.scss */
   .demo .demoNavigation .flex-prev img {
     margin-left: -20px;
     margin-right: 5px;
   }
 }
-/* line 144, ../sass/partials/demo.scss */
+/* line 146, ../sass/partials/demo.scss */
 .demo .demoNavigation .flex-next {
   float: right;
 }
-/* line 146, ../sass/partials/demo.scss */
+/* line 148, ../sass/partials/demo.scss */
 .demo .demoNavigation .flex-next img {
   transform: rotateZ(180deg);
   margin-left: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 146, ../sass/partials/demo.scss */
+  /* line 148, ../sass/partials/demo.scss */
   .demo .demoNavigation .flex-next img {
     margin-left: 5px;
     margin-right: -20px;
   }
 }
-/* line 155, ../sass/partials/demo.scss */
+/* line 157, ../sass/partials/demo.scss */
+.demo .demoNavigation span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 160, ../sass/partials/demo.scss */
+.demo .demoNavigation span.hpNone {
+  margin-left: 5px;
+}
+/* line 164, ../sass/partials/demo.scss */
 .demo .demoNavigation a {
   font-family: monda;
   font-size: 26px;
   letter-spacing: 0.7px;
   color: #f6c3c9;
 }
-/* line 160, ../sass/partials/demo.scss */
+/* line 169, ../sass/partials/demo.scss */
 .demo .demoNavigation a:focus {
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 155, ../sass/partials/demo.scss */
+  /* line 164, ../sass/partials/demo.scss */
   .demo .demoNavigation a {
     font-size: 18px;
     letter-spacing: 0.5px;
   }
 }
-/* line 171, ../sass/partials/demo.scss */
+/* line 180, ../sass/partials/demo.scss */
 .demo .custom-controls-container ol {
   display: none;
 }

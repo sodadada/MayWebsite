@@ -127,6 +127,8 @@
       margin: 0;
     }
     img {
+      display: inline-block;
+      vertical-align: middle;
       width: 33px;
       height: auto;
       @media screen and (max-width: 768px) {
@@ -150,6 +152,13 @@
           margin-left: 5px;
           margin-right: -20px;
         }
+      }
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      &.hpNone {
+        margin-left: 5px;
       }
     }
     a {
