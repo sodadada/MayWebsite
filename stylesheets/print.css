@@ -206,16 +206,16 @@ a:hover {
 
 /* line 105, ../sass/partials/main.scss */
 .dot {
-  display: inline;
   color: #9fcfda;
   font-size: 24px;
-  line-height: 0;
+  line-height: 28px;
   margin-right: 7px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   /* line 105, ../sass/partials/main.scss */
   .dot {
     font-size: 18px;
+    margin-right: 2px;
   }
 }
 
@@ -840,18 +840,18 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 5, ../sass/partials/demo.scss */
+/* line 7, ../sass/partials/demo.scss */
 .esc {
   height: 50px;
   background: #f6c3c9;
 }
-@media screen and (min-width: 768px) {
-  /* line 5, ../sass/partials/demo.scss */
+@media screen and (min-width: 769px) {
+  /* line 7, ../sass/partials/demo.scss */
   .esc {
     display: none;
   }
 }
-/* line 11, ../sass/partials/demo.scss */
+/* line 13, ../sass/partials/demo.scss */
 .esc img {
   float: right;
   width: 30px;
@@ -860,7 +860,7 @@ a:hover {
   margin-right: 18px;
 }
 
-/* line 21, ../sass/partials/demo.scss */
+/* line 23, ../sass/partials/demo.scss */
 .demo {
   display: flex;
   justify-content: center;
@@ -871,23 +871,23 @@ a:hover {
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
-  /* line 21, ../sass/partials/demo.scss */
+  /* line 23, ../sass/partials/demo.scss */
   .demo {
     min-height: calc(100vh - 50px);
     padding: 0 40px;
     border: none;
   }
 }
-/* line 36, ../sass/partials/demo.scss */
+/* line 38, ../sass/partials/demo.scss */
 .demo .demoFrame {
   position: relative;
 }
-/* line 38, ../sass/partials/demo.scss */
+/* line 40, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider {
   width: calc(100vw - 80px);
   margin-bottom: 35px;
 }
-/* line 43, ../sass/partials/demo.scss */
+/* line 45, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider .frame {
   max-width: 1200px;
   padding-top: 40px;
@@ -896,12 +896,12 @@ a:hover {
   overflow: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 43, ../sass/partials/demo.scss */
+  /* line 45, ../sass/partials/demo.scss */
   .demo .demoFrame .demoFlexslider .frame {
     padding-top: 50px;
   }
 }
-/* line 54, ../sass/partials/demo.scss */
+/* line 56, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider .frame iframe {
   float: left;
   width: 195px;
@@ -910,7 +910,7 @@ a:hover {
   margin-right: 40px;
 }
 @media screen and (max-width: 768px) {
-  /* line 54, ../sass/partials/demo.scss */
+  /* line 56, ../sass/partials/demo.scss */
   .demo .demoFrame .demoFlexslider .frame iframe {
     float: none;
     display: block;
@@ -919,14 +919,14 @@ a:hover {
     margin: 0 auto;
   }
 }
-/* line 70, ../sass/partials/demo.scss */
+/* line 72, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider .frame div {
   float: right;
   width: calc(100% - (130px * 2) - 200px - 40px);
   margin-right: 130px;
 }
 @media screen and (max-width: 768px) {
-  /* line 70, ../sass/partials/demo.scss */
+  /* line 72, ../sass/partials/demo.scss */
   .demo .demoFrame .demoFlexslider .frame div {
     float: none;
     width: auto;
@@ -934,24 +934,24 @@ a:hover {
     margin-bottom: 20px;
   }
 }
-/* line 89, ../sass/partials/demo.scss */
+/* line 91, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider .frame .frameTitle i {
   font-size: 18px;
   color: #9fcfda;
   margin: 0;
 }
-/* line 102, ../sass/partials/demo.scss */
+/* line 104, ../sass/partials/demo.scss */
 .demo .demoFrame .demoFlexslider .frame .frameP p {
   margin-top: 24px;
 }
-/* line 111, ../sass/partials/demo.scss */
+/* line 113, ../sass/partials/demo.scss */
 .demo .demoNavigation {
   max-width: 1200px;
   padding: 0 60px 15px;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 111, ../sass/partials/demo.scss */
+  /* line 113, ../sass/partials/demo.scss */
   .demo .demoNavigation {
     position: absolute;
     top: 10px;
@@ -960,7 +960,7 @@ a:hover {
     margin: 0;
   }
 }
-/* line 122, ../sass/partials/demo.scss */
+/* line 124, ../sass/partials/demo.scss */
 .demo .demoNavigation img {
   display: inline-block;
   vertical-align: middle;
@@ -968,66 +968,66 @@ a:hover {
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 122, ../sass/partials/demo.scss */
+  /* line 124, ../sass/partials/demo.scss */
   .demo .demoNavigation img {
     width: 20px;
   }
 }
-/* line 131, ../sass/partials/demo.scss */
+/* line 133, ../sass/partials/demo.scss */
 .demo .demoNavigation .flex-prev img {
   margin-right: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 131, ../sass/partials/demo.scss */
+  /* line 133, ../sass/partials/demo.scss */
   .demo .demoNavigation .flex-prev img {
     margin-left: -20px;
     margin-right: 5px;
   }
 }
-/* line 138, ../sass/partials/demo.scss */
+/* line 140, ../sass/partials/demo.scss */
 .demo .demoNavigation .flex-next {
   float: right;
 }
-/* line 140, ../sass/partials/demo.scss */
+/* line 142, ../sass/partials/demo.scss */
 .demo .demoNavigation .flex-next img {
   transform: rotateZ(180deg);
   margin-left: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 140, ../sass/partials/demo.scss */
+  /* line 142, ../sass/partials/demo.scss */
   .demo .demoNavigation .flex-next img {
     margin-left: 5px;
     margin-right: -20px;
   }
 }
-/* line 149, ../sass/partials/demo.scss */
+/* line 151, ../sass/partials/demo.scss */
 .demo .demoNavigation span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 152, ../sass/partials/demo.scss */
+/* line 154, ../sass/partials/demo.scss */
 .demo .demoNavigation span.hpNone {
   margin-left: 5px;
 }
-/* line 156, ../sass/partials/demo.scss */
+/* line 158, ../sass/partials/demo.scss */
 .demo .demoNavigation a {
   font-family: monda;
   font-size: 26px;
   letter-spacing: 0.7px;
   color: #f6c3c9;
 }
-/* line 161, ../sass/partials/demo.scss */
+/* line 163, ../sass/partials/demo.scss */
 .demo .demoNavigation a:focus {
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 156, ../sass/partials/demo.scss */
+  /* line 158, ../sass/partials/demo.scss */
   .demo .demoNavigation a {
     font-size: 18px;
     letter-spacing: 0.5px;
   }
 }
-/* line 172, ../sass/partials/demo.scss */
+/* line 174, ../sass/partials/demo.scss */
 .demo .custom-controls-container ol {
   display: none;
 }

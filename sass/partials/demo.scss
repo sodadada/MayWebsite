@@ -1,11 +1,13 @@
 //Demo
+//小於(含)768px 設計和排列方式改變
+//小於576px 圖片和字變小
 @import "modules/color";
 
 //esc to main page profolio
 .esc {
   height: 50px;
   background: $lightPink;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
   img {

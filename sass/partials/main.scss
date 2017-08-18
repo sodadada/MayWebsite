@@ -103,13 +103,13 @@ a {
 }
 
 .dot {
-  display: inline;
   color: #9fcfda;
   font-size: 24px;
-  line-height: 0;
+  line-height: 28px;
   margin-right: 7px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 576px) {
     font-size: 18px;
+    margin-right: 2px;
   }
 }
 

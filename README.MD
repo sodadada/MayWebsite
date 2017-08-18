@@ -20,7 +20,12 @@
 
 ```
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1e8ba6' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,
+  %3Csvg viewBox='0 0 32 32'
+  xmlns='http://www.w3.org/2000/svg'
+  %3E%3Cpath stroke='#1e8ba6'
+  stroke-width='2' stroke-linecap='round' stroke-miterlimit='10'
+  d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 ```
 
@@ -35,37 +40,27 @@
 ## Home
 -  六角型，arrowDown都是用absolute排列
 - heading，因為懶得計算absolute的width和margin，故另開一個div 100vh來設display flex，使heading置中．
-
-```
-box-shadow: 0px 80px 0px 0px $lightPink inset,
-            0px -80px 0px 0px $lightPink inset;
-```
 <br>
+
 
 ## About
 ### min-height
 - 預防當寬度縮小時，內容往下擠就超出height了
 - 例子：版面設計為一面式100vh, screen高度縮小時常常內容會凸出邊界造成跑版
-- 所以當內容及各邊界更重要不可以犧牲時，就叫犧牲100vh，改為min-height100vh就好了
-```
-height: 100vh;
-min-height: 708px;;
-@media screen and (max-width: 576px){
-  height: 100vh;
-  min-height: auto;
-}
-```
+- 所以當內容超過邊界時，增加min-height100vh就好了
+
 
 ### title
-- 使用margin-top而非padding-top: 因為垂直置中是用flexbox做的，因此如果再加padding-top，padding-bottom也要再加．
+- 這裡使用margin-top而非padding-top差別在於內容物邊界的判定: 因為垂直置中是用flexbox做的，因此title上面如果是padding，整個content就會偏下．
 
 ### flexbox 圖片變形
 - 用align-self就可以了，看是要flex start 還是middle都可
+<br>
 
 
 ## Profolio
 ### vh/vw 和 % 傻傻分不清楚
-
+- % 取值是來自父元素的寬度
 
 
 
@@ -73,8 +68,11 @@ min-height: 708px;;
 ### iframe 水平置中
 - ```display: block; margin: 0 auto;```就可以了
 
-### box-shadow: 0 -100px 0 0 #fff inset;
-
+### 粉紅框也可以用box-shadow做出來
+```
+box-shadow: 0px 80px 0px 0px $lightPink inset,
+            0px -80px 0px 0px $lightPink inset;
+```
 
 
 
@@ -173,7 +171,7 @@ onsubmit="sent_權杖=true"
 - footer 設absolute bottom:0  
 - 父元素設relative 再設padding-bottom
 - padding-bottom除了與下一個DOM隔開距離
-- 使用absolute的***子元素不想被覆蓋***也可以用這招喔
+- 使用absolute的 **子元素不想被覆蓋** 也可以用這招喔
 
 
 
@@ -182,7 +180,7 @@ onsubmit="sent_權杖=true"
 
 ## 其他
 ###字體問題
-- 最好都用google font，否則太特殊的字體不一定美哥裝置都有．
+- 最好都用google font，否則太特殊的字體不一定每個裝置都有．
 
 ###  @media screen
 ```
