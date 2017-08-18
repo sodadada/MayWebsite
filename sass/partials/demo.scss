@@ -1,12 +1,14 @@
 //Demo
 @import "modules/color";
 
+
+
 //esc to main page profolio
 .esc {
-  height: 60px;
+  height: 50px;
   background: $lightPink;
-  @media screen and (max-width: 768px) {
-    height: 48px;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
   img {
     float: right;
@@ -23,19 +25,12 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 60px);
-  @media screen and (max-width: 768px) {
-    min-height: calc(100vh - 48px);
-  }
-  background-color: #fff;
   border-top: $lightPink solid 80px;
   border-bottom: $lightPink solid 80px;
-  //when screen is narrow then 768px border narrow down
-  @media screen and (max-height: 768px) {
-    border-top: $lightPink solid calc((100vh - 557px - 60px) / 2);
-    border-bottom: $lightPink solid calc((100vh - 557px - 60px) / 2);
-  }
+  background-color: #fff;
   @media screen and (max-width: 768px) {
-    padding: 0 40px;
+    min-height: calc(100vh - 50px);
+    padding: 0 40px; //padding when mobile phone
     border: none;
   }
 

@@ -31,17 +31,18 @@
 /* line 31, ../../sass/partials/home.scss */
 .home .arrowDown {
   position: absolute;
+  background-image: url("../image/arrowDown.png");
   width: 60px;
-  height: auto;
+  height: 60px;
   top: 87%;
   left: 0;
   right: 0;
   margin: auto;
   animation-duration: 1.5s;
 }
-/* line 40, ../../sass/partials/home.scss */
+/* line 41, ../../sass/partials/home.scss */
 .home .arrowDown:hover {
-  content: url("../image/arrowDownHover.png");
+  background-position: 0 60px;
 }
 @media screen and (max-width: 576px) {
   /* line 31, ../../sass/partials/home.scss */
@@ -49,49 +50,49 @@
     display: none;
   }
 }
-/* line 48, ../../sass/partials/home.scss */
+/* line 49, ../../sass/partials/home.scss */
 .home .hex {
   position: absolute;
 }
-/* line 51, ../../sass/partials/home.scss */
+/* line 52, ../../sass/partials/home.scss */
 .home img.topRight {
   max-width: 12.98vw;
   top: 60px;
   right: 0px;
 }
 @media screen and (max-width: 768px) {
-  /* line 51, ../../sass/partials/home.scss */
+  /* line 52, ../../sass/partials/home.scss */
   .home img.topRight {
     top: 47px;
   }
 }
 @media screen and (max-width: 576px) {
-  /* line 51, ../../sass/partials/home.scss */
+  /* line 52, ../../sass/partials/home.scss */
   .home img.topRight {
     max-width: 80px;
   }
 }
-/* line 62, ../../sass/partials/home.scss */
+/* line 63, ../../sass/partials/home.scss */
 .home img.bottomLeft {
   max-width: 18.36vw;
   bottom: -46px;
   left: 0;
 }
 @media screen and (max-width: 576px) {
-  /* line 62, ../../sass/partials/home.scss */
+  /* line 63, ../../sass/partials/home.scss */
   .home img.bottomLeft {
     max-width: 109px;
     bottom: -19px;
   }
 }
-/* line 71, ../../sass/partials/home.scss */
+/* line 72, ../../sass/partials/home.scss */
 .home img.bottomRight {
   max-width: 36.24vw;
   bottom: -45px;
   right: 0;
 }
 @media screen and (max-width: 576px) {
-  /* line 71, ../../sass/partials/home.scss */
+  /* line 72, ../../sass/partials/home.scss */
   .home img.bottomRight {
     max-width: 226px;
     bottom: -20px;

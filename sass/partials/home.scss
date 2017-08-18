@@ -30,15 +30,16 @@
 
   .arrowDown {
     position: absolute;
+    background-image: url('../image/arrowDown.png');
     width:60px;
-    height: auto;
+    height: 60px;
     top: 87%;
     left:0;
     right:0;
     margin:auto;
     animation-duration: 1.5s;
     &:hover{
-      content: url('../image/arrowDownHover.png');
+      background-position: 0 60px;
     }
     @media screen and (max-width: 576px) {
       display: none;
