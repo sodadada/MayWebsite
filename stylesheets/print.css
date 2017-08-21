@@ -242,15 +242,22 @@ a:hover {
   position: relative;
   background-color: #e6f6fb;
   height: 100vh;
+  text-align: center;
 }
-/* line 9, ../sass/partials/home.scss */
+/* line 10, ../sass/partials/home.scss */
+.home::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 18, ../sass/partials/home.scss */
 .home div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
 }
-/* line 16, ../sass/partials/home.scss */
+/* line 22, ../sass/partials/home.scss */
 .home div h3 {
   font-family: Bungee;
   text-align: center;
@@ -259,7 +266,7 @@ a:hover {
   letter-spacing: 2.1px;
 }
 @media screen and (max-width: 576px) {
-  /* line 16, ../sass/partials/home.scss */
+  /* line 22, ../sass/partials/home.scss */
   .home div h3 {
     text-align: left;
     font-size: 34px;
@@ -267,7 +274,7 @@ a:hover {
     letter-spacing: 1.4px;
   }
 }
-/* line 31, ../sass/partials/home.scss */
+/* line 37, ../sass/partials/home.scss */
 .home .arrowDown {
   position: absolute;
   background-image: url("../image/arrowDown.png");
@@ -279,59 +286,59 @@ a:hover {
   margin: auto;
   animation-duration: 1.5s;
 }
-/* line 41, ../sass/partials/home.scss */
+/* line 47, ../sass/partials/home.scss */
 .home .arrowDown:hover {
   background-position: 0 60px;
 }
 @media screen and (max-width: 576px) {
-  /* line 31, ../sass/partials/home.scss */
+  /* line 37, ../sass/partials/home.scss */
   .home .arrowDown {
     display: none;
   }
 }
-/* line 49, ../sass/partials/home.scss */
+/* line 55, ../sass/partials/home.scss */
 .home .hex {
   position: absolute;
 }
-/* line 52, ../sass/partials/home.scss */
+/* line 58, ../sass/partials/home.scss */
 .home img.topRight {
   max-width: 12.98vw;
   top: 60px;
   right: 0px;
 }
 @media screen and (max-width: 768px) {
-  /* line 52, ../sass/partials/home.scss */
+  /* line 58, ../sass/partials/home.scss */
   .home img.topRight {
     top: 47px;
   }
 }
 @media screen and (max-width: 576px) {
-  /* line 52, ../sass/partials/home.scss */
+  /* line 58, ../sass/partials/home.scss */
   .home img.topRight {
     max-width: 80px;
   }
 }
-/* line 63, ../sass/partials/home.scss */
+/* line 69, ../sass/partials/home.scss */
 .home img.bottomLeft {
   max-width: 18.36vw;
   bottom: -46px;
   left: 0;
 }
 @media screen and (max-width: 576px) {
-  /* line 63, ../sass/partials/home.scss */
+  /* line 69, ../sass/partials/home.scss */
   .home img.bottomLeft {
     max-width: 109px;
     bottom: -19px;
   }
 }
-/* line 72, ../sass/partials/home.scss */
+/* line 78, ../sass/partials/home.scss */
 .home img.bottomRight {
   max-width: 36.24vw;
   bottom: -45px;
   right: 0;
 }
 @media screen and (max-width: 576px) {
-  /* line 72, ../sass/partials/home.scss */
+  /* line 78, ../sass/partials/home.scss */
   .home img.bottomRight {
     max-width: 226px;
     bottom: -20px;

@@ -6,13 +6,19 @@
   position: relative;
   background-color: $lightBlue;
   height: 100vh;
-  div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 
-    //center titler
+  //center titler
+  div{
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
     h3 {
       font-family: Bungee;
       text-align: center;
