@@ -54,7 +54,8 @@
 - 這裡使用margin-top而非padding-top差別在於內容物邊界的判定: 因為垂直置中是用flexbox做的，因此title上面如果是padding，整個content就會偏下．
 
 ### flexbox 圖片變形
-- 用align-self就可以了，看是要flex start 還是middle都可
+- 用align-self就可以了，看是要flex start 還是center都可
+- 因為align-self會去讀取圖片的高度才能知道要怎麼置中，可能是這樣解決了flex image變形的問題
 <br>
 
 
@@ -152,7 +153,7 @@ realBtn.click();
 - 把上面這一串插在```<div class="ss-form">```後面
 - 在iframe後面的form Tag裡，改寫成這樣
 ```
-target="iframe_權杖"
+target="iframe_權杖"  //target=id
 onsubmit="sent_權杖=true"
 ```
 - 當表單填寫完後寄出重回自己的頁面的功能：
